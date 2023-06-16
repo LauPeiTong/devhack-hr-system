@@ -1,6 +1,5 @@
 <template lang="pug">
-  v-row.justify-center.mx-auto
-    v-card.pa-2.rounded-lg.fill-width.fill-height
+    v-card.pa-4.rounded-lg(outlined)
       .company.fill-width
         p.subtitle-2.px-4.pt-2.mb-0 Company Overview
         p.text-h5.px-4.mb-0.pt-0.primary--text Improving operational effectiveness through Intelligent automation, Data Services & ML and Conversational AI

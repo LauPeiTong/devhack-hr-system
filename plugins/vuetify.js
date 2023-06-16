@@ -6,9 +6,9 @@ export default new Vuetify({
     dark: false,
     themes: {
       light: {
-        primary: '#5B5F97', // purple
+        primary: '#4C5175', // purple
         secondary: '#333333', // black
-        tertiary: '#B8B8D1', // light purple
+        tertiary: '#BCE7D9', // light freen
         danger: '#FF6B6C', // red
         darkGrey: '#848484',
         lightGrey: '#C1C1C1',
@@ -16,7 +16,8 @@ export default new Vuetify({
         success: '#FFC145', // yellow
         brown: '#918679',
         green: '#3d9970',
-        blue: '#1890FF'
+        blue: '#1890FF',
+        darkBlue: '#314760'
       }
     }
   }

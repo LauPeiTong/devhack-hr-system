@@ -31,14 +31,14 @@ export default {
         },
         {
           link: '/',
-          name: 'Reports',
-          tooltip: 'Reports',
+          name: 'Employees',
+          tooltip: 'Employees',
           icon: 'bx-bar-chart-square'
         },
         {
           link: '/',
-          name: 'News',
-          tooltip: 'News',
+          name: 'Performance',
+          tooltip: 'Performance',
           icon: 'bx-wallet-alt'
         },
         {

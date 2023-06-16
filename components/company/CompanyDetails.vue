@@ -1,6 +1,5 @@
 <template lang="pug">
-  v-row.justify-center.mx-auto
-    v-card.pa-2.rounded-lg.fill-width.fill-height
+  v-card.pa-4.rounded-lg(outlined)
       .d-flex.flex-no-wrap.justify-space-between
         .company.fill-width
           v-card-title

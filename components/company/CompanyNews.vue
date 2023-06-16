@@ -1,6 +1,5 @@
 <template lang="pug">
-  v-row.justify-center.mx-auto
-    v-card.pa-2.rounded-lg.fill-width.fill-height
+  v-card.pa-4.rounded-lg(outlined)
       .company.fill-width.py-4
         p.text-h5.px-2.mb-0.pt-0.primary--text News
           |

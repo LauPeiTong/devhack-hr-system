@@ -92,7 +92,7 @@ export default {
 }
 
 .dark-background {
-  background-color: #5B5F97;
+  background-color: #4C5175;
 }
 
 .notification {

@@ -1,6 +1,5 @@
 <template lang="pug">
-  v-row.justify-center.mx-auto
-    v-card.pa-4.rounded-lg.fill-width.fill-height
+  v-card.pa-4.rounded-lg(outlined)
       .company.fill-width.py-4
         p.subtitle-2.px-4.pt-2.mb-0 Prediction
         p.text-h3.px-4.mb-2.pt-0.green--text Investable

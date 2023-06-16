@@ -292,7 +292,7 @@ export default {
       }
     },
     onRowClick (item) {
-      this.$router.push('/company')
+      this.$router.push('/employee')
     }
   }
 }

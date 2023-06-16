@@ -248,7 +248,7 @@ export default {
     //! Profile detailes
     profileImg: {
       type: String,
-      default: 'https://www.pngitem.com/pimgs/m/78-786293_1240-x-1240-0-avatar-profile-icon-png.png'
+      default: 'https://www.foundation.vic.edu.au/FLCH/_lib/libraries/grp/tickets/img/helpdesk-staff.png'
     },
     profileName: {
       type: String,
@@ -599,7 +599,7 @@ export default {
     color: var(--bg-color);
   }
   .selected {
-    background-color: #FFC145 !important;
+    background-color: #4C5175 !important;
   }
   .selected_text {
     transition: all 0.5s ease;
