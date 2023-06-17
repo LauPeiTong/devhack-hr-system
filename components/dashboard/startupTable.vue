@@ -1,85 +1,83 @@
 <template lang="pug">
-  v-row.justify-center.mx-auto
-    v-card.pa-4.rounded-lg
-      v-card-title
-        p.mb-0 Expenses Record
-        v-spacer
-      hr.mt-4
-        //- v-text-field(
-        //-   v-model="search"
-        //-   append-icon="mdi-magnify"
-        //-   label="Search"
-        //-   single-line
-        //-   hide-details
-        //- )
+v-row.justify-center.mx-auto
+  v-card.pa-4.rounded-lg
+    v-card-title
+      p.mb-0 Expenses Record
+      v-spacer
+    hr.mt-4
+      //- v-text-field(
+      //-   v-model="search"
+      //-   append-icon="mdi-magnify"
+      //-   label="Search"
+      //-   single-line
+      //-   hide-details
+      //- )
 
-      //- Datatable
-      v-data-table.mt-18(
-        :headers="headers"
-        :items="startups"
-        :search="search"
-        multi-sort
-        @click:row="onRowClick"
-      )
+    //- Datatable
+    v-data-table.mt-18(
+      :headers="headers"
+      :items="startups"
+      :search="search"
+      multi-sort
+      @click:row="onRowClick"
+    )
 
-        template(v-slot:body.prepend)
-          tr
-            td.py-4
-              v-text-field(v-model="id" type="text" label="Employee ID" hide-details="auto" dense outlined)
-            td.py-4
-              v-text-field(v-model="name" type="text" label="Employee Name" hide-details="auto" dense outlined)
-            td.py-4
-              v-text-field(v-model="hired_year" type="number" label="More than" hide-details="auto" dense outlined)
-            td.py-4
-              v-text-field(v-model="sales_amount" type="number" label="More than" hide-details="auto" dense outlined)
-            td.py-4
-              v-select.select-category(:items="categoriesList" label="Select a category" v-model="categories" hide-details="auto" multiple chips dense outlined)
-                template(v-slot:selection="{ item, index }")
-                  v-chip(v-if="index <= 1" :color="getColor(item)" outlined)
-                    span {{ item }}
-                  span(
-                    v-if="index === 2"
-                    class="grey--text text-caption"
-                  ) (+{{ categories.length - 2 }} others)
-            td.py-4
-              v-text-field(v-model="num_shareholders" type="number" label="More than" hide-details="auto" dense outlined)
+      template(v-slot:body.prepend)
+        tr
+          td.py-4
+            v-text-field(v-model="id" type="text" label="Employee ID" hide-details="auto" dense outlined)
+          td.py-4
+            v-text-field(v-model="name" type="text" label="Employee Name" hide-details="auto" dense outlined)
+          td.py-4
+            v-text-field(v-model="hired_year" type="number" label="More than" hide-details="auto" dense outlined)
+          td.py-4
+            v-text-field(v-model="sales_amount" type="number" label="More than" hide-details="auto" dense outlined)
+          td.py-4
+            v-select.select-category(:items="categoriesList" label="Select a category" v-model="categories" hide-details="auto" multiple chips dense outlined)
+              template(v-slot:selection="{ item, index }")
+                v-chip(v-if="index <= 1" :color="getColor(item)" outlined)
+                  span {{ item }}
+                span(
+                  v-if="index === 2"
+                  class="grey--text text-caption"
+                ) (+{{ categories.length - 2 }} others)
+          td.py-4
+            v-text-field(v-model="num_shareholders" type="number" label="More than" hide-details="auto" dense outlined)
 
-            td.py-4
-              v-select.select-category(:items="statusList" label="Select a category" v-model="status" hide-details="auto" multiple chips dense outlined)
-                template(v-slot:selection="{ item, index }")
-                  v-chip(:color="item == 'Investable'? '#3d9970' : '#FF6B6C'" outlined)
-                    span {{ item }}
+          td.py-4
+            v-select.select-category(:items="statusList" label="Select a category" v-model="status" hide-details="auto" multiple chips dense outlined)
+              template(v-slot:selection="{ item, index }")
+                v-chip(:color="item == 'Investable'? '#3d9970' : '#FF6B6C'" outlined)
+                  span {{ item }}
 
-        template(v-slot:item.id_c="{ item, index }")
-          p.mb-0.font-weight-bold Employee {{ index + 1}}
+      //- template(v-slot:item.id_c="{ item, index }")
+      //-   p.mb-0.font-weight-bold Employee {{ index + 1}}
 
-        template(v-slot:item.hired_year_c="{ item }")
-          p.mb-0 {{ parseInt(item.hired_year_c) }}
+      template(v-slot:item.hired_year_c="{ item }")
+        p.mb-0 {{ parseInt(item.hired_year_c) }}
 
-        template(v-slot:item.sales_amount_c="{ item }")
-          p.mb-0 {{ $formatCurrency(item.sales_amount_c) }}
+      template(v-slot:item.sales_amount_c="{ item }")
+        p.mb-0 {{ $formatCurrency(item.sales_amount_c) }}
 
-        template(v-slot:item.num_shareholders="{ item }")
-          p.mb-0 {{ parseInt(item.num_shareholders) }}
+      template(v-slot:item.num_shareholders="{ item }")
+        p.mb-0 {{ parseInt(item.num_shareholders) }}
 
-        template(v-slot:item.categories="{ item }")
-          div(v-for="c in $strToList(item.categories)")
-            v-chip.my-1(
-              :color="getColor(c)"
-              outlined
-              pill
-            )
-              p.mb-0 {{ c }}
-
-        template(v-slot:item.predicted_status="{ item }")
+      template(v-slot:item.categories="{ item }")
+        div(v-for="c in $strToList(item.categories)")
           v-chip.my-1(
-            :color="item.predicted_status == 'Investable'? '#3d9970' : '#FF6B6C'"
+            :color="getColor(c)"
             outlined
             pill
           )
-            p.mb-0 {{ item.predicted_status }}
+            p.mb-0 {{ c }}
 
-        //template(v-btn @click = "showReceipt")
+      template(v-slot:item.predicted_status="{ item }")
+        v-chip.my-1(
+          :color="item.predicted_status == 'Investable'? '#3d9970' : '#FF6B6C'"
+          outlined
+          pill
+        )
+          p.mb-0 {{ item.predicted_status }}
 
 </template>
 
@@ -204,7 +202,7 @@ export default {
           text: 'Employee',
           align: 'start',
           value: 'id_c',
-          filter: (f) => { return (f + '').toLowerCase().includes(this.id.toLowerCase())}
+          filter: (f) => { return (f + '').toLowerCase().includes(this.id.toLowerCase()) }
         },
         {
           text: 'Employee Name',
@@ -270,9 +268,10 @@ export default {
             return this.status.includes(value)
           }
         }
-        //,{ text: "hehe", value: "action" }
       ],
+      // startups: require('../../assets/data/data.json')
       startups: require('../../assets/data/data.json')
+
     }
   },
   computed: {
@@ -290,13 +289,16 @@ export default {
     onRowClick (item) {
       this.$router.push('/employee')
     },
-    handleCustomButtonClick(item){
-      // Handle custom button click
-      console.log('Custom Button clicked')
-    },
+    // handleCustomButtonClick(item){
+    //   // Handle custom button click
+    //   console.log('Custom Button clicked')
+    // },
+    sortNames () {
+      this.names.sort()
     }
   }
 }
+
 </script>
 
 <style lang="scss" scoped>

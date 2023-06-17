@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-card.pa-4.rounded-lg(outlined)
+v-card.pa-4.rounded-lg(outlined)
       .d-flex.flex-no-wrap.justify-space-between
         .company.fill-width
           v-card-title

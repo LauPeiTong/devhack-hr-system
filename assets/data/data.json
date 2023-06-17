@@ -2,7 +2,7 @@
     {
         "name_c": "MTI2NTc2MVc=",
         "incorporated_date_c": "2018",
-        "total_funding_c": "30000.0",
+        "sales_amount": "30000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-300.0",
         "num_founders": "2.0",
@@ -65,7 +65,7 @@
     {
         "name_c": "MTQ5MzcyMlA=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "100000.0",
+        "sales_amount": "100000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "2.0",
@@ -128,7 +128,7 @@
     {
         "name_c": "MjAxOTAxMDI1Nzg0",
         "incorporated_date_c": "2019",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "10000000.0",
         "EBIT_c": "-2000000.0",
         "num_founders": "1.636805181",
@@ -191,7 +191,7 @@
     {
         "name_c": "MTQ1MDk1OVU=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "40000.0",
+        "sales_amount": "40000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "2.0",
@@ -254,7 +254,7 @@
     {
         "name_c": "MTQyMTQ1NEg=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "200000.0",
+        "sales_amount": "200000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-5000.0",
         "num_founders": "2.0",
@@ -317,7 +317,7 @@
     {
         "name_c": "MTM5NDQyNlY=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "700000.0",
+        "sales_amount": "700000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-300000.0",
         "num_founders": "2.0",
@@ -380,7 +380,7 @@
     {
         "name_c": "MTE3NjQ2NFg=",
         "incorporated_date_c": "2016",
-        "total_funding_c": "10000000.0",
+        "sales_amount": "10000000.0",
         "revenue_c": "60000000.0",
         "EBIT_c": "700000.0",
         "num_founders": "1.636805181",
@@ -443,7 +443,7 @@
     {
         "name_c": "MTI1NDg0NFU=",
         "incorporated_date_c": "2017",
-        "total_funding_c": "20000.0",
+        "sales_amount": "20000.0",
         "revenue_c": "900000.0",
         "EBIT_c": "30000.0",
         "num_founders": "3.0",
@@ -506,7 +506,7 @@
     {
         "name_c": "MTI4NDc3M00=",
         "incorporated_date_c": "2018",
-        "total_funding_c": "10000.0",
+        "sales_amount": "10000.0",
         "revenue_c": "500000.0",
         "EBIT_c": "100000.0",
         "num_founders": "1.0",
@@ -569,7 +569,7 @@
     {
         "name_c": "MTI1MzM5N1c=",
         "incorporated_date_c": "2017",
-        "total_funding_c": "20000.0",
+        "sales_amount": "20000.0",
         "revenue_c": "10000.0",
         "EBIT_c": "9000.0",
         "num_founders": "2.0",
@@ -632,7 +632,7 @@
     {
         "name_c": "MTAzNDA1NkQ=",
         "incorporated_date_c": "2013",
-        "total_funding_c": "100000.0",
+        "sales_amount": "100000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-9000.0",
         "num_founders": "3.0",
@@ -695,7 +695,7 @@
     {
         "name_c": "MTI0NDY5N1c=",
         "incorporated_date_c": "2017",
-        "total_funding_c": "800000.0",
+        "sales_amount": "800000.0",
         "revenue_c": "8000.0",
         "EBIT_c": "-400000.0",
         "num_founders": "1.0",
@@ -758,7 +758,7 @@
     {
         "name_c": "MTQ1ODkwNlA=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "70000.0",
+        "sales_amount": "70000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "3.0",
@@ -821,7 +821,7 @@
     {
         "name_c": "MTM2NTg3Mkg=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "20000.0",
+        "sales_amount": "20000.0",
         "revenue_c": "300000.0",
         "EBIT_c": "5000.0",
         "num_founders": "1.636805181",
@@ -884,7 +884,7 @@
     {
         "name_c": "MTQyMjUwMlY=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -947,7 +947,7 @@
     {
         "name_c": "MTQ3OTQ4M0g=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -1010,7 +1010,7 @@
     {
         "name_c": "MTQ3MTYyNFA=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -1073,7 +1073,7 @@
     {
         "name_c": "MTQ2MDA0NEg=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "2.0",
@@ -1136,7 +1136,7 @@
     {
         "name_c": "MTM2MTkyMlQ=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "20000.0",
+        "sales_amount": "20000.0",
         "revenue_c": "6000.0",
         "EBIT_c": "-6000.0",
         "num_founders": "1.636805181",
@@ -1199,7 +1199,7 @@
     {
         "name_c": "MTQyMDQ2MFY=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -1262,7 +1262,7 @@
     {
         "name_c": "MTMzMjAxMUQ=",
         "incorporated_date_c": "2019",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "3.0",
@@ -1325,7 +1325,7 @@
     {
         "name_c": "MTQ0NDM4M0s=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -1388,7 +1388,7 @@
     {
         "name_c": "MTQzODExN1Y=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "7.0",
@@ -1451,7 +1451,7 @@
     {
         "name_c": "MTM2MzYxNUQ=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.0",
@@ -1514,7 +1514,7 @@
     {
         "name_c": "MTM5Mzg3NFY=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "50000.0",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.0",
@@ -1577,7 +1577,7 @@
     {
         "name_c": "MTMwODY5MlU=",
         "incorporated_date_c": "2018",
-        "total_funding_c": "10000.0",
+        "sales_amount": "10000.0",
         "revenue_c": "40000.0",
         "EBIT_c": "1000.0",
         "num_founders": "2.0",
@@ -1640,7 +1640,7 @@
     {
         "name_c": "MTM2MDE5N1A=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "50000.0",
+        "sales_amount": "50000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "2.0",
@@ -1703,7 +1703,7 @@
     {
         "name_c": "MTE4NjcwN1U=",
         "incorporated_date_c": "2016",
-        "total_funding_c": "1000000.0",
+        "sales_amount": "1000000.0",
         "revenue_c": "500000.0",
         "EBIT_c": "10000.0",
         "num_founders": "6.0",
@@ -1766,7 +1766,7 @@
     {
         "name_c": "MTMyODM4NEg=",
         "incorporated_date_c": "2019",
-        "total_funding_c": "1000.0",
+        "sales_amount": "1000.0",
         "revenue_c": "5000.0",
         "EBIT_c": "-20000.0",
         "num_founders": "3.0",
@@ -1829,7 +1829,7 @@
     {
         "name_c": "MTQ2MDA3N1g=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -1892,7 +1892,7 @@
     {
         "name_c": "MTM2NTEyOFQ=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "100000.0",
+        "sales_amount": "100000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "2.0",
@@ -1955,7 +1955,7 @@
     {
         "name_c": "MTQwNzU3NUs=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "20000.0",
+        "sales_amount": "20000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "4.0",
@@ -2018,7 +2018,7 @@
     {
         "name_c": "MTQxNjA3N1g=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "60000.0",
+        "sales_amount": "60000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.0",
@@ -2081,7 +2081,7 @@
     {
         "name_c": "MTI0NDIwNkE=",
         "incorporated_date_c": "2017",
-        "total_funding_c": "200000.0",
+        "sales_amount": "200000.0",
         "revenue_c": "10000.0",
         "EBIT_c": "-300.0",
         "num_founders": "2.0",
@@ -2144,7 +2144,7 @@
     {
         "name_c": "MTQ2NjI0OFQ=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "4000000.0",
+        "sales_amount": "4000000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -2207,7 +2207,7 @@
     {
         "name_c": "MTM5OTgyN0g=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "200000.0",
+        "sales_amount": "200000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "3.0",
@@ -2270,7 +2270,7 @@
     {
         "name_c": "MTQ0NTQ3M0Q=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "3.0",
@@ -2333,7 +2333,7 @@
     {
         "name_c": "MTQ0OTgxMFg=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -2396,7 +2396,7 @@
     {
         "name_c": "MTM1MjAyMk0=",
         "incorporated_date_c": "2019",
-        "total_funding_c": "20000.0",
+        "sales_amount": "20000.0",
         "revenue_c": "700000.0",
         "EBIT_c": "10000.0",
         "num_founders": "3.0",
@@ -2459,7 +2459,7 @@
     {
         "name_c": "MTQyMTI5Mkg=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "20000.0",
+        "sales_amount": "20000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "2.0",
@@ -2522,7 +2522,7 @@
     {
         "name_c": "MTA4MTk5MkQ=",
         "incorporated_date_c": "2014",
-        "total_funding_c": "30000.0",
+        "sales_amount": "30000.0",
         "revenue_c": "700000.0",
         "EBIT_c": "200000.0",
         "num_founders": "3.0",
@@ -2585,7 +2585,7 @@
     {
         "name_c": "MTI0OTQ3N1c=",
         "incorporated_date_c": "2017",
-        "total_funding_c": "10000.0",
+        "sales_amount": "10000.0",
         "revenue_c": "200000.0",
         "EBIT_c": "90000.0",
         "num_founders": "1.0",
@@ -2648,7 +2648,7 @@
     {
         "name_c": "NzAyMzY0QQ==",
         "incorporated_date_c": "2005",
-        "total_funding_c": "30000.0",
+        "sales_amount": "30000.0",
         "revenue_c": "200000.0",
         "EBIT_c": "-100000.0",
         "num_founders": "1.636805181",
@@ -2711,7 +2711,7 @@
     {
         "name_c": "MTQ0NTYwNlA=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "10000.0",
+        "sales_amount": "10000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "6.0",
@@ -2774,7 +2774,7 @@
     {
         "name_c": "MTA3NjE5NVA=",
         "incorporated_date_c": "2014",
-        "total_funding_c": "30000.0",
+        "sales_amount": "30000.0",
         "revenue_c": "90000.0",
         "EBIT_c": "1000.0",
         "num_founders": "2.0",
@@ -2837,7 +2837,7 @@
     {
         "name_c": "MTE4NDYzNVY=",
         "incorporated_date_c": "2016",
-        "total_funding_c": "60000.0",
+        "sales_amount": "60000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-100000.0",
         "num_founders": "2.0",
@@ -2900,7 +2900,7 @@
     {
         "name_c": "MTM1MzQ5MEQ=",
         "incorporated_date_c": "2019",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "1000000.0",
         "EBIT_c": "500000.0",
         "num_founders": "1.0",
@@ -2963,7 +2963,7 @@
     {
         "name_c": "MTQ3NDQ2OUQ=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "3.0",
@@ -3026,7 +3026,7 @@
     {
         "name_c": "MTQ2MTQ5NUE=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -3089,7 +3089,7 @@
     {
         "name_c": "MTQ4MzA2NEg=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "3.0",
@@ -3152,7 +3152,7 @@
     {
         "name_c": "MTQ2NTc4MFQ=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -3215,7 +3215,7 @@
     {
         "name_c": "MTQ2MDAxNVg=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -3278,7 +3278,7 @@
     {
         "name_c": "MTI3NjQ4N1Y=",
         "incorporated_date_c": "2018",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "200000.0",
         "EBIT_c": "40000.0",
         "num_founders": "2.0",
@@ -3341,7 +3341,7 @@
     {
         "name_c": "MTQyNDQ2Nkg=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "100000.0",
         "EBIT_c": "3000.0",
         "num_founders": "2.0",
@@ -3404,7 +3404,7 @@
     {
         "name_c": "MTQyMzU4N1A=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1000.0",
+        "sales_amount": "1000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "2.0",
@@ -3467,7 +3467,7 @@
     {
         "name_c": "MTQwMzE2OVU=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "100000.0",
+        "sales_amount": "100000.0",
         "revenue_c": "200000.0",
         "EBIT_c": "50000.0",
         "num_founders": "1.0",
@@ -3530,7 +3530,7 @@
     {
         "name_c": "MTQzMTk0OUg=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -3593,7 +3593,7 @@
     {
         "name_c": "MTQwNDMyNkE=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "50000.0",
+        "sales_amount": "50000.0",
         "revenue_c": "80000.0",
         "EBIT_c": "-50000.0",
         "num_founders": "2.0",
@@ -3656,7 +3656,7 @@
     {
         "name_c": "MTQwODIxNEQ=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "70000.0",
+        "sales_amount": "70000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-1000.0",
         "num_founders": "1.0",
@@ -3719,7 +3719,7 @@
     {
         "name_c": "MTQwNjM1OFc=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "2.0",
@@ -3782,7 +3782,7 @@
     {
         "name_c": "MTQwMjAxOFc=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "6000.0",
+        "sales_amount": "6000.0",
         "revenue_c": "300000.0",
         "EBIT_c": "7000.0",
         "num_founders": "3.0",
@@ -3845,7 +3845,7 @@
     {
         "name_c": "MTQwMTA1MlY=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.0",
@@ -3908,7 +3908,7 @@
     {
         "name_c": "MTM2MjA4MU0=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "100000.0",
+        "sales_amount": "100000.0",
         "revenue_c": "900000.0",
         "EBIT_c": "-100000.0",
         "num_founders": "5.0",
@@ -3971,7 +3971,7 @@
     {
         "name_c": "MjAyMTQzMDM4Wg==",
         "incorporated_date_c": "2014",
-        "total_funding_c": "3000000.0",
+        "sales_amount": "3000000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.0",
@@ -4034,7 +4034,7 @@
     {
         "name_c": "MTQ2ODY4Mlc=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "2.0",
@@ -4097,7 +4097,7 @@
     {
         "name_c": "MTM4ODE2OVU=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "10000.0",
+        "sales_amount": "10000.0",
         "revenue_c": "10000.0",
         "EBIT_c": "-8000.0",
         "num_founders": "1.0",
@@ -4160,7 +4160,7 @@
     {
         "name_c": "MTIwNjg3Mlc=",
         "incorporated_date_c": "2016",
-        "total_funding_c": "100000.0",
+        "sales_amount": "100000.0",
         "revenue_c": "20000000.0",
         "EBIT_c": "3000000.0",
         "num_founders": "1.636805181",
@@ -4223,7 +4223,7 @@
     {
         "name_c": "MjAxNzA4NDc3RA==",
         "incorporated_date_c": "2017",
-        "total_funding_c": "40000.0",
+        "sales_amount": "40000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -4286,7 +4286,7 @@
     {
         "name_c": "MTMxMTk4NEE=",
         "incorporated_date_c": "2019",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "400000.0",
         "EBIT_c": "30000.0",
         "num_founders": "1.636805181",
@@ -4349,7 +4349,7 @@
     {
         "name_c": "MTMxNzYzNVU=",
         "incorporated_date_c": "2019",
-        "total_funding_c": "300000.0",
+        "sales_amount": "300000.0",
         "revenue_c": "10000000.0",
         "EBIT_c": "700000.0",
         "num_founders": "1.0",
@@ -4412,7 +4412,7 @@
     {
         "name_c": "MjAyMzA4MzUwVw==",
         "incorporated_date_c": "2021",
-        "total_funding_c": "8000.0",
+        "sales_amount": "8000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -4475,7 +4475,7 @@
     {
         "name_c": "MTIyMjg0Mkg=",
         "incorporated_date_c": "2017",
-        "total_funding_c": "8000000.0",
+        "sales_amount": "8000000.0",
         "revenue_c": "900000.0",
         "EBIT_c": "-1000000.0",
         "num_founders": "3.0",
@@ -4538,7 +4538,7 @@
     {
         "name_c": "MTM0MjQ1MFQ=",
         "incorporated_date_c": "2019",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -4601,7 +4601,7 @@
     {
         "name_c": "OTc5NDkzSw==",
         "incorporated_date_c": "2012",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -4664,7 +4664,7 @@
     {
         "name_c": "MTI4MTQwNFA=",
         "incorporated_date_c": "2018",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -4727,7 +4727,7 @@
     {
         "name_c": "MTQyNTQ3M1Q=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -4790,7 +4790,7 @@
     {
         "name_c": "MTI0NzkwNVQ=",
         "incorporated_date_c": "2017",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "1000.0",
         "EBIT_c": "-90000.0",
         "num_founders": "1.636805181",
@@ -4853,7 +4853,7 @@
     {
         "name_c": "MTQwMTA5NlU=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -4916,7 +4916,7 @@
     {
         "name_c": "MTQwNjMyN1c=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "50000.0",
         "EBIT_c": "10000.0",
         "num_founders": "1.636805181",
@@ -4979,7 +4979,7 @@
     {
         "name_c": "MTI2OTU3NVA=",
         "incorporated_date_c": "2018",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -5042,7 +5042,7 @@
     {
         "name_c": "MTQyMzg5MEs=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -5105,7 +5105,7 @@
     {
         "name_c": "MTQyODIxNVc=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -5168,7 +5168,7 @@
     {
         "name_c": "MTM4NTU2Mks=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -5231,7 +5231,7 @@
     {
         "name_c": "MTQyNzM5MlY=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -5294,7 +5294,7 @@
     {
         "name_c": "MTMxMzg1Nlc=",
         "incorporated_date_c": "2019",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -5357,7 +5357,7 @@
     {
         "name_c": "MTQzMDU3OVU=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1411443.236",
+        "sales_amount": "1411443.236",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.0",
@@ -5420,7 +5420,7 @@
     {
         "name_c": "MTQ5MTAxNEQ=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.0",
@@ -5483,7 +5483,7 @@
     {
         "name_c": "MTQ3ODQ2N0s=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "10000.0",
+        "sales_amount": "10000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -5546,7 +5546,7 @@
     {
         "name_c": "MTQyMjEzMUQ=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -5609,7 +5609,7 @@
     {
         "name_c": "MTM4MDQ0NVY=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "2000.0",
+        "sales_amount": "2000.0",
         "revenue_c": "40000.0",
         "EBIT_c": "10000.0",
         "num_founders": "3.0",
@@ -5672,7 +5672,7 @@
     {
         "name_c": "MTQ3ODMzM00=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "3.0",
@@ -5735,7 +5735,7 @@
     {
         "name_c": "MTQ2NzYzMVc=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "3.0",
@@ -5798,7 +5798,7 @@
     {
         "name_c": "MTQyNjI3OUg=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "5.0",
@@ -5861,7 +5861,7 @@
     {
         "name_c": "MTQ3MDAyNlg=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.0",
@@ -5924,7 +5924,7 @@
     {
         "name_c": "MjAyMTM2MTU5Qw==",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.0",
@@ -5987,7 +5987,7 @@
     {
         "name_c": "MjAyMDE0NDA4Vw==",
         "incorporated_date_c": "2020",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.0",
@@ -6050,7 +6050,7 @@
     {
         "name_c": "MjAyMTAxNDYzUg==",
         "incorporated_date_c": "2021",
-        "total_funding_c": "60000.0",
+        "sales_amount": "60000.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.0",
@@ -6113,7 +6113,7 @@
     {
         "name_c": "MTQ4Njc1OVc=",
         "incorporated_date_c": "2022",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
@@ -6176,7 +6176,7 @@
     {
         "name_c": "MTM3ODk0MFY=",
         "incorporated_date_c": "2020",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "50000.0",
         "EBIT_c": "-200000.0",
         "num_founders": "1.636805181",
@@ -6239,7 +6239,7 @@
     {
         "name_c": "MTQwNjE4NVY=",
         "incorporated_date_c": "2021",
-        "total_funding_c": "1.0",
+        "sales_amount": "1.0",
         "revenue_c": "2784638.405",
         "EBIT_c": "-352965.3828",
         "num_founders": "1.636805181",
