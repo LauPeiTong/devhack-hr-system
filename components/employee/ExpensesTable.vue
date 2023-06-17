@@ -37,7 +37,7 @@ v-row.justify-center.mx-auto
           td.py-4
             v-select.select-category(:items="categoriesList" label="Select a category" v-model="categories" hide-details="auto" multiple chips dense outlined)
               template(v-slot:selection="{ item, index }")
-                v-chip(v-if="index <= 1" :color="getColor(item)" outlined)
+                v-chip(v-if="index <= 1" :color="getColor(item.categories)" outlined)
                   span {{ item }}
                 span(
                   v-if="index === 2"
@@ -49,7 +49,7 @@ v-row.justify-center.mx-auto
           td.py-4
             v-select.select-category(:items="statusList" label="Select a category" v-model="status" hide-details="auto" multiple chips dense outlined)
               template(v-slot:selection="{ item, index }")
-                v-chip(:color="item == 'Verified by ML'? '#3d9970' : '#FF6B6C'" outlined)
+                v-chip(:color="item.status_c == 'Verified'? '#3d9970' : '#FF6B6C'" outlined)
                   span {{ item }}
 
       template(v-slot:item.id_c="{ item, index }")
@@ -73,13 +73,13 @@ v-row.justify-center.mx-auto
             p.mb-0 {{ item.categories }}
           p(v-if="item.categories == 'Transportation'") yeayy
 
-      template(v-slot:item.predicted_status="{ item }")
+      template(v-slot:item.status_c="{ item }")
         v-chip.my-1(
-          :color="item.predicted_status == 'Verification Status'? '#3d9970' : '#FF6B6C'"
+          :color="item.status_c == 'Verified'? '#3d9970' : '#FF6B6C'"
           outlined
           pill
         )
-          p.mb-0 {{ item.predicted_status }}
+          p.mb-0 {{ item.status_c }}
 
       template(v-slot:item.actions="{ item }")
         v-btn.small(@click="showPrintDialog(item)") Show PDF
@@ -97,7 +97,7 @@ export default {
       description: '',
       date: '',
       amount: '',
-      categories: [],
+      categories: '',
       status: [],
       num_shareholders: '',
       statusList: [
@@ -230,7 +230,7 @@ export default {
         {
           text: 'Prediction',
           align: 'center',
-          value: 'predicted_status',
+          value: 'status_c',
           filter: (value) => {
             if (this.status.length === 0) { return true }
             return this.status.includes(value)
@@ -248,7 +248,7 @@ export default {
   },
   methods: {
     getColor (category) {
-      const result = this.colors.find((c) => { return c.id === category })
+      const result = this.colors.find((c) => { return c.name === category })
       if (result) {
         return result.color
       } else {
@@ -262,20 +262,13 @@ export default {
       this.names.sort()
     },
     showPrintDialog (item) {
-      // Logic to prepare the content for printing
-      // You can format the content as needed, such as creating a separate printable view or modifying the existing content
-
-      // Add CSS media query for print styles
       const printStyles = `
         <style>
-          @media print {
-            /* Add your print-specific styles here */
-          }
         </style>
       `
 
       // Combine the content and print styles
-      const contentToPrint = printStyles + '<h1>Printable Content</h1>' // Replace with your actual content
+      const contentToPrint = printStyles + '<h1>Printable Contenthbjjhkhkj</h1>' // Replace with your actual content
 
       // Open a new window and set the content to be printed
       const printWindow = window.open('', '_blank')
