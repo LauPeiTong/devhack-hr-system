@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-card.pa-4.rounded-lg(outlined)
+v-card.pa-4.rounded-lg(outlined)
       .company.fill-width.py-4
         p.text-h5.px-2.mb-0.pt-0.primary--text News
           |
