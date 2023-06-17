@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-row.justify-center.mx-auto
+v-row.justify-center.mx-auto
     v-card.py-4.px-6.rounded-lg
       v-card-title.px-0.pb-0
         p.mb-0 Employee List

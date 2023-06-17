@@ -27,7 +27,7 @@ v-card.pa-4.rounded-lg(outlined)
               //- a.subtitle-1.mb-0.font-weight-regular.text-decoration-underline View Details
 
         v-avatar.ma-1(
-          size="120"
+          size="200"
           tile
         )
          v-img(:src="require(`../../assets/company/employee_icon.png`)")
