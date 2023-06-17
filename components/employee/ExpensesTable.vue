@@ -111,23 +111,19 @@ export default {
         'Taxi',
         'Accommodation',
         'Medical',
-        'Travelling Airfare - local',
-        'Travelling Mileage - local',
+        'Travelling Airfare',
+        'Travelling Mileage',
         'Entertainment',
         'Others'
       ],
       colors: [
-        { name: 'Transportation - 5km', color: '#003f5c' },
-        { name: 'Transportation - 15km', color: '#7a5195' },
+        { name: 'Transportation', color: '#003f5c' },
         { name: 'Parking', color: '#ef5675' },
         { name: 'Taxi', color: '#ffa600' },
-        { name: 'Accommodation - local', color: '#3d9970' },
-        { name: 'Accommodation - oversea', color: '#2f4b7c' },
+        { name: 'Accommodation', color: '#3d9970' },
         { name: 'Medical', color: '#f95d6a' },
-        { name: 'Travelling Airfare - local', color: '#665191' },
-        { name: 'Travelling Airfare - oversea', color: '#00cc66' },
-        { name: 'Travelling Mileage - local', color: '#a05195' },
-        { name: 'Travelling Mileage - oversea', color: '#2f4b7c' },
+        { name: 'Travelling Airfare', color: '#665191' },
+        { name: 'Travelling Mileage', color: '#a05195' },
         { name: 'Entertainment', color: '#f95d6a' },
         { name: 'Others', color: '#ff7c43' }
         // { name: 'Software', color: '#ffa600' },
@@ -294,7 +290,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style lang="scss" scoped>
