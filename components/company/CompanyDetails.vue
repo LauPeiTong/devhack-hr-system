@@ -1,33 +1,36 @@
 <template lang="pug">
-  v-card.pa-4.rounded-lg(outlined)
+v-card.pa-4.rounded-lg(outlined)
       .d-flex.flex-no-wrap.justify-space-between
         .company.fill-width
           v-card-title
-            p.mb-0.primary--text Reacty
+            p.mb-0.primary--text Kim Junkyu
           v-card-text
             v-card.px-4.py-2(outlined)
-              p.subtitle-1.mb-0.font-weight-medium Categories:
+              p.subtitle-1.mb-0.font-weight-medium Position:
                 |
                 v-chip.chip-small.mb-1.ml-2(
                   color="#a05195"
                   outlined
                   pill
                 )
-                  p.mb-0 Artificial Intelligence
-              p.subtitle-1.mb-0.font-weight-medium Incorporated Date:
+                  p.mb-0 HR Manager
+              p.subtitle-1.mb-0.font-weight-medium Email:
                 |
-                span.font-weight-regular.ml-2 2020
-              p.subtitle-1.mb-0.font-weight-medium Total Funding:
+                span.font-weight-regular.ml-2 junkyuKim@gmail.com
+
+              p.subtitle-1.mb-0.font-weight-medium Contact No.:
                 |
-                span.font-weight-regular.ml-2 RM 10,000.00
-              a.subtitle-1.mb-0.font-weight-regular.text-decoration-underline View Details
+                span.font-weight-regular.ml-2 03-347859859
+              p.subtitle-1.mb-0.font-weight-medium Company Name:
+                |
+                span.font-weight-regular.ml-2 KJK Sdn. Bhd.
+              //- a.subtitle-1.mb-0.font-weight-regular.text-decoration-underline View Details
 
         v-avatar.ma-1(
           size="120"
           tile
         )
-          v-img(:src="require(`../../assets/company/9.png`)")
-
+         v-img(:src="require(`../../assets/company/employee_icon.png`)")
 </template>
 
 <script>

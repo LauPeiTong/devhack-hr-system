@@ -19,7 +19,7 @@ import UpperTitleVue from '~/components/UpperTitle.vue'
 import CompanyOverviewVue from '~/components/company/CompanyOverview.vue'
 import CompanyNewsVue from '~/components/company/CompanyNews.vue'
 
-import LineChartVue from '~/components/employee/LineChart.vue'
+// import LineChartVue from '~/components/employee/LineChart.vue'
 
 export default {
   name: 'CompanyPage',
@@ -28,8 +28,7 @@ export default {
     CompanyDetailsVue,
     CompanyOverviewVue,
     CompanyNewsVue,
-    UpperTitleVue,
-    LineChartVue
+    UpperTitleVue
   },
   layout: 'default',
   data () {
