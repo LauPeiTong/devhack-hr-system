@@ -3,9 +3,7 @@ v-card.pa-4.rounded-lg(outlined)
       .company.fill-width.py-4
         ApexCharts.d-flex.justify-space-around(type="donut" :options="chartOptions" :series="series" width="320" height="320")
         a.subtitle-1.px-4.pb-4.mb-0.font-weight-regular.d-flex.justify-space-around View Analysis
-        v-btn(outlined)(
-          color='#4C5175'
-        ) Book Mentoring Session
+        v-btn(outlined color='#4C5175') Book Mentoring Session
 </template>
 
 <script>

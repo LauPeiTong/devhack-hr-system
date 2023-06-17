@@ -17,7 +17,8 @@ export default new Vuetify({
         brown: '#918679',
         green: '#3d9970',
         blue: '#1890FF',
-        darkBlue: '#314760'
+        darkBlue: '#314760',
+        orange: '#FDA42E'
       }
     }
   }

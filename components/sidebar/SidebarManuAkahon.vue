@@ -256,7 +256,7 @@ export default {
     },
     profileRole: {
       type: String,
-      default: 'Ventual Capitalist'
+      default: 'Manager'
     },
     isExitButton: {
       type: Boolean,
