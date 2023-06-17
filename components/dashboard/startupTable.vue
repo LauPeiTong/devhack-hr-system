@@ -2,7 +2,7 @@
   v-row.justify-center.mx-auto
     v-card.pa-4.rounded-lg
       v-card-title
-        p.mb-0 Investment Prediction
+        p.mb-0 Expenses Record
         v-spacer
       hr.mt-4
         //- v-text-field(
@@ -25,11 +25,13 @@
         template(v-slot:body.prepend)
           tr
             td.py-4
-              v-text-field(v-model="name" type="text" label="Company Name" hide-details="auto" dense outlined)
+              v-text-field(v-model="id" type="text" label="Employee ID" hide-details="auto" dense outlined)
             td.py-4
-              v-text-field(v-model="incorporated_year" type="number" label="More than" hide-details="auto" dense outlined)
+              v-text-field(v-model="name" type="text" label="Employee Name" hide-details="auto" dense outlined)
             td.py-4
-              v-text-field(v-model="total_funding" type="number" label="More than" hide-details="auto" dense outlined)
+              v-text-field(v-model="hired_year" type="number" label="More than" hide-details="auto" dense outlined)
+            td.py-4
+              v-text-field(v-model="sales_amount" type="number" label="More than" hide-details="auto" dense outlined)
             td.py-4
               v-select.select-category(:items="categoriesList" label="Select a category" v-model="categories" hide-details="auto" multiple chips dense outlined)
                 template(v-slot:selection="{ item, index }")
@@ -40,9 +42,6 @@
                     class="grey--text text-caption"
                   ) (+{{ categories.length - 2 }} others)
             td.py-4
-              v-text-field(v-model="num_founders" type="number" label="More than" hide-details="auto" dense outlined)
-
-            td.py-4
               v-text-field(v-model="num_shareholders" type="number" label="More than" hide-details="auto" dense outlined)
 
             td.py-4
@@ -51,17 +50,14 @@
                   v-chip(:color="item == 'Investable'? '#3d9970' : '#FF6B6C'" outlined)
                     span {{ item }}
 
-        template(v-slot:item.name_c="{ item, index }")
-          p.mb-0.font-weight-bold Company {{ index + 1}}
+        template(v-slot:item.id_c="{ item, index }")
+          p.mb-0.font-weight-bold Employee {{ index + 1}}
 
-        template(v-slot:item.incorporated_date_c="{ item }")
-          p.mb-0 {{ parseInt(item.incorporated_date_c) }}
+        template(v-slot:item.hired_year_c="{ item }")
+          p.mb-0 {{ parseInt(item.hired_year_c) }}
 
-        template(v-slot:item.total_funding_c="{ item }")
-          p.mb-0 {{ $formatCurrency(item.total_funding_c) }}
-
-        template(v-slot:item.num_founders="{ item }")
-          p.mb-0 {{ parseInt(item.num_founders) }}
+        template(v-slot:item.sales_amount_c="{ item }")
+          p.mb-0 {{ $formatCurrency(item.sales_amount_c) }}
 
         template(v-slot:item.num_shareholders="{ item }")
           p.mb-0 {{ parseInt(item.num_shareholders) }}
@@ -83,6 +79,8 @@
           )
             p.mb-0 {{ item.predicted_status }}
 
+        //template(v-btn @click = "showReceipt")
+
 </template>
 
 <script>
@@ -91,13 +89,13 @@ export default {
   data () {
     return {
       search: '',
+      id: '',
       name: '',
-      incorporated_year: '',
-      total_funding: '',
+      hired_year: '',
+      sales_amount: '',
       categories: [],
       status: [],
       num_shareholders: '',
-      num_founders: '',
       statusList: [
         'Investable',
         'Not Investable'
@@ -203,27 +201,33 @@ export default {
       ],
       headers: [
         {
-          text: 'Company Name',
+          text: 'Employee',
+          align: 'start',
+          value: 'id_c',
+          filter: (f) => { return (f + '').toLowerCase().includes(this.id.toLowerCase())}
+        },
+        {
+          text: 'Employee Name',
           align: 'start',
           value: 'name_c',
           filter: (f) => { return (f + '').toLowerCase().includes(this.name.toLowerCase()) }
         },
         {
-          text: 'Incorp. Date',
+          text: 'Hired. Date',
           align: 'center',
-          value: 'incorporated_date_c',
+          value: 'hired_year_c',
           filter: (value) => {
-            if (!this.incorporated_year) { return true }
-            return value > parseInt(this.incorporated_year)
+            if (!this.hired_year) { return true }
+            return value > parseInt(this.hired_year)
           }
         },
         {
-          text: 'Total Funding',
+          text: 'Sales Amount',
           align: 'end',
-          value: 'total_funding_c',
+          value: 'sales_amount_c',
           filter: (value) => {
-            if (!this.total_funding) { return true }
-            return value > parseInt(this.total_funding)
+            if (!this.sales_amount) { return true }
+            return value > parseInt(this.sales_amount)
           }
         },
         {
@@ -249,15 +253,6 @@ export default {
           }
         },
         {
-          text: 'Number of Founder',
-          align: 'center',
-          value: 'num_founders',
-          filter: (value) => {
-            if (!this.num_founders) { return true }
-            return value > parseInt(this.num_founders)
-          }
-        },
-        {
           text: 'Number of Shareholders',
           value: 'num_shareholders',
           align: 'center',
@@ -275,6 +270,7 @@ export default {
             return this.status.includes(value)
           }
         }
+        //,{ text: "hehe", value: "action" }
       ],
       startups: require('../../assets/data/data.json')
     }
@@ -284,7 +280,7 @@ export default {
   },
   methods: {
     getColor (category) {
-      const result = this.colors.find((c) => { return c.name === category })
+      const result = this.colors.find((c) => { return c.id === category })
       if (result) {
         return result.color
       } else {
@@ -293,6 +289,11 @@ export default {
     },
     onRowClick (item) {
       this.$router.push('/employee')
+    },
+    handleCustomButtonClick(item){
+      // Handle custom button click
+      console.log('Custom Button clicked')
+    },
     }
   }
 }
