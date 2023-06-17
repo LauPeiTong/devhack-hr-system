@@ -3,7 +3,7 @@
   upper-title.ma-0(:title="'Dashboard'" :titleClass="'dark-background'" :icon="'bell'" :rightIconColor="$vuetify.theme.themes.light.tertiary")
   v-row.ma-0.pt-8.fill-width
     v-col(cols="12")
-      startup-table-vue.pb-8.align-center.px-7.pt-12
+      //- startup-table-vue.pb-8.align-center.px-7.pt-12
 </template>
 
 <script>

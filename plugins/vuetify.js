@@ -8,7 +8,7 @@ export default new Vuetify({
       light: {
         primary: '#4C5175', // purple
         secondary: '#333333', // black
-        tertiary: '#BCE7D9', // light freen
+        tertiary: '#BCE7D9', // light green
         danger: '#FF6B6C', // red
         darkGrey: '#848484',
         lightGrey: '#C1C1C1',

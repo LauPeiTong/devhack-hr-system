@@ -22,9 +22,8 @@
                 span.font-weight-regular.ml-2 RM 10,000.00
               a.subtitle-1.mb-0.font-weight-regular.text-decoration-underline View Details
 
-        v-avatar(
-          class="ma-1"
-          size="200"
+        v-avatar.ma-1(
+          size="120"
           tile
         )
           v-img(:src="require(`../../assets/company/9.png`)")
