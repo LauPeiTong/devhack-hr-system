@@ -1,7 +1,7 @@
 [
     {
       "name": "Kim Junkyu",
-      "description_c": "Flight ticket for business trip to Moscow",
+      "description_c": "Flight tickets for business trip to Moscow",
       "date_c": "2023-06-15",
       "amount_c": 250.75,
       "Transportation - 5km": 0,
@@ -16,7 +16,7 @@
       "Travelling Mileage - local": 0,
       "Travelling Mileage - oversea": 0,
       "Entertainment": 0,
-      "categories": "Travelling Airfare-oversea",
+      "categories": "Travelling Airfare",
       "status_c": "Verified"
     },
     {
@@ -28,15 +28,12 @@
       "Transportation - 15km": 1,
       "Parking": 0,
       "Taxi": 0,
-      "Accommodation - local": 0,
-      "Accommodation - oversea": 0,
+      "Accommodation": 0,
       "Medical": 0,
-      "Travelling Airfare - local": 0,
-      "Travelling Airfare - oversea": 0,
-      "Travelling Mileage - local": 0,
-      "Travelling Mileage - oversea": 0,
+      "Travelling Airfare": 0,
+      "Travelling Mileage": 0,
       "Entertainment": 0,
-      "categories": "Transportation-15km",
+      "categories": "Transportation",
       "status_c": "Not Verified"
     },
     {
@@ -57,6 +54,6 @@
       "Travelling Mileage - oversea": 0,
       "Entertainment": 0,
       "categories": "Parking",
-      "status_c": "Not Verified" 
+      "status_c": "Not Verified"
     }
 ]
