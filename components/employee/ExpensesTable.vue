@@ -2,7 +2,7 @@
 v-row.justify-center.mx-auto
   v-card.pa-4.rounded-lg
     v-card-title
-      p.mb-0 Expenses Record
+      p.mb-0 Sales Record
       v-spacer
     hr.mt-4
       //- v-text-field(
@@ -31,58 +31,61 @@ v-row.justify-center.mx-auto
           td.py-4
             v-text-field(v-model="description" type="text" label="More than" hide-details="auto" dense outlined)
           td.py-4
-            v-text-field(v-model="date" type="text" label="More than" hide-details="auto" dense outlined)
+            v-text-field(v-model="date" type="text" label="date" hide-details="auto" dense outlined)
           td.py-4
             v-text-field(v-model="amount" type="number" label="More than" hide-details="auto" dense outlined)
           td.py-4
+            v-text-field(v-model="buyer" type="text" label="Buyer Name" hide-details="auto" dense outlined)
+          td.py-4
+            v-text-field(v-model="location" type="text" label="More than" hide-details="auto" dense outlined)
+          td.py-4
             v-select.select-category(:items="categoriesList" label="Select a category" v-model="categories" hide-details="auto" multiple chips dense outlined)
               template(v-slot:selection="{ item, index }")
-                v-chip(v-if="index <= 1" :color="getColor(item)" outlined)
+                v-chip(v-if="index <= 1" :color="getColor(item.categories)" outlined)
                   span {{ item }}
                 span(
                   v-if="index === 2"
                   class="grey--text text-caption"
                 ) (+{{ categories.length - 2 }} others)
-          //- td.py-4
-          //-   v-text-field(v-model="num_shareholders" type="number" label="More than" hide-details="auto" dense outlined)
-
           td.py-4
             v-select.select-category(:items="statusList" label="Select a category" v-model="status" hide-details="auto" multiple chips dense outlined)
               template(v-slot:selection="{ item, index }")
-                v-chip(:color="item == 'Verified by ML'? '#3d9970' : '#FF6B6C'" outlined)
+                v-chip(:color="item.status_c == 'Verified'? '#3d9970' : '#FF6B6C'" outlined)
                   span {{ item }}
 
       template(v-slot:item.id_c="{ item, index }")
         p.mb-0.font-weight-bold E {{ index + 1}}
 
-      template(v-slot:item.name_c="{ item }")
+      //- template(v-slot:item.name_c="{ item }")
+      //-   .d-flex.align-center
+      //-     VueAvatar(:username="item.name" :size="24" :colors="avatarColor" :customStyles="{'color': 'white'}")
+      //-     span.ml-2.caption {{item.name}}
+
+      template(v-slot:item.date_c="{ item }")
         p.mb-0 {{ parseInt(item.date_c) }}
 
       template(v-slot:item.amount_c="{ item }")
         p.mb-0 {{ $formatCurrency(item.amount_c) }}
 
-      //- template(v-slot:item.num_shareholders="{ item }")
-      //-   p.mb-0 {{ parseInt(item.num_shareholders) }}
-
       template(v-slot:item.categories="{ item }")
-          v-chip.my-1(
-            :color="getColor(item.categories)"
-            outlined
-            pill
+          div(v-for="c in $strToList(item.categories)")
+           v-chip.my-1(
+             :color="getColor(c)"
+             outlined
+             pill
           )
-            p.mb-0 {{ item.categories }}
-          p(v-if="item.categories == 'Transportation'") yeayy
+            p.mb-0 {{ c }}
 
-      template(v-slot:item.predicted_status="{ item }")
+      template(v-slot:item.status_c="{ item }")
         v-chip.my-1(
-          :color="item.predicted_status == 'Verification Status'? '#3d9970' : '#FF6B6C'"
+          :color="item.status_c == 'Verified'? '#3d9970' : '#FF6B6C'"
           outlined
           pill
         )
-          p.mb-0 {{ item.predicted_status }}
+          p.mb-0 {{ item.status_c }}
 
       template(v-slot:item.actions="{ item }")
-        v-btn.small(@click="showPrintDialog(item)") Show PDF
+        v-btn.small(@click="showPrintDialog(item)" :style="{ backgroundColor: '#007bff', color: '#ffffff', borderRadius: '5px', padding: '8px 16px' }") Show PDF
 
 </template>
 
@@ -97,7 +100,9 @@ export default {
       description: '',
       date: '',
       amount: '',
-      categories: [],
+      buyer: '',
+      location: '',
+      categories: '',
       status: [],
       num_shareholders: '',
       statusList: [
@@ -106,71 +111,37 @@ export default {
       ],
       categoriesList: [
         'All',
-        'Transportation',
-        'Parking',
-        'Taxi',
-        'Accommodation',
-        'Medical',
-        'Travelling Airfare',
-        'Travelling Mileage',
-        'Entertainment',
+        'Bunglow',
+        'Condominium',
+        'Serviced Apartment',
+        'Flat',
+        'Soho',
+        'Terraced Home',
+        'Sale',
+        'Rental',
         'Others'
       ],
       colors: [
-        { name: 'Transportation', color: '#003f5c' },
-        { name: 'Parking', color: '#ef5675' },
-        { name: 'Taxi', color: '#ffa600' },
-        { name: 'Accommodation', color: '#3d9970' },
-        { name: 'Medical', color: '#f95d6a' },
-        { name: 'Travelling Airfare', color: '#665191' },
-        { name: 'Travelling Mileage', color: '#a05195' },
-        { name: 'Entertainment', color: '#f95d6a' },
+        { name: 'Bunglow', color: '#003f5c' },
+        { name: 'Condominium', color: '#f95d6a' },
+        { name: 'Serviced Apartment', color: '#ffa600' },
+        { name: 'Flat', color: '#3d9970' },
+        { name: 'Soho', color: '#f95d6a' },
+        { name: 'Terraced Home', color: '#665191' },
+        { name: 'Sale', color: '#a05195' },
+        { name: 'Rental', color: '#2f4b7c' },
         { name: 'Others', color: '#ff7c43' }
-        // { name: 'Software', color: '#ffa600' },
-        // { name: 'Data and Analytics', color: '#00cc66' },
-        // { name: 'Health Care', color: '#3d9970' },
-        // { name: 'Lending and Investments', color: '#ef5675' },
-        // { name: 'Agriculture and Farming', color: '#7a5195' },
-        // { name: 'Other', color: '#003f5c' },
-        // { name: 'Travel and Tourism', color: '#a05195' },
-        // { name: 'Internet Services', color: '#ff7c43' },
-        // { name: 'Apps', color: '#665191' },
-        // { name: 'Information Technology', color: '#2f4b7c' },
-        // { name: 'Media and Entertainment', color: '#f95d6a' },
-        // { name: 'Video', color: '#00cc66' },
-        // { name: 'Community and Lifestyle', color: '#3d9970' },
-        // { name: 'Science and Engineering', color: '#ef5675' },
-        // { name: 'Biotechnology', color: '#7a5195' },
-        // { name: 'Administrative Services', color: '#003f5c' },
-        // { name: 'Food and Beverage', color: '#a05195' },
-        // { name: 'Government and Military', color: '#ff7c43' },
-        // { name: 'Sports', color: '#665191' },
-        // { name: 'Energy', color: '#2f4b7c' },
-        // { name: 'Natural Resources', color: '#f95d6a' },
-        // { name: 'Education', color: '#ef5675' },
-        // { name: 'Events', color: '#3d9970' },
-        // { name: 'Real Estate', color: '#00cc66' },
-        // { name: 'Content and Publishing', color: '#7a5195' },
-        // { name: 'Manufacturing', color: '#003f5c' },
-        // { name: 'Artificial Intelligence', color: '#a05195' },
-        // { name: 'Professional Services', color: '#ff7c43' },
-        // { name: 'Gaming', color: '#665191' },
-        // { name: 'Privacy and Security', color: '#2f4b7c' },
-        // { name: 'Music and Audio', color: '#f95d6a' },
-        // { name: 'Navigation and Mapping', color: '#42f5aa' },
-        // { name: 'Platforms', color: '#f542b6' },
-        // { name: 'Messaging and Telecommunications', color: '#42f5d2' }
       ],
       headers: [
         {
           text: 'Employee',
-          align: 'start',
+          align: 'center',
           value: 'id_c',
           filter: (f) => { return (f + '').toLowerCase().includes(this.id.toLowerCase()) }
         },
         {
           text: 'Employee Name',
-          align: 'start',
+          align: 'center',
           value: 'name_c',
           filter: (f) => { return (f + '').toLowerCase().includes(this.name.toLowerCase()) }
         },
@@ -185,13 +156,13 @@ export default {
         },
         {
           text: 'Description',
-          align: 'start',
+          align: 'center',
           value: 'description_c',
           filter: (f) => { return (f + '').toLowerCase().includes(this.description.toLowerCase()) }
         },
         {
           text: 'Amount',
-          align: 'end',
+          align: 'center',
           value: 'amount_c',
           filter: (value) => {
             if (!this.amount) { return true }
@@ -199,15 +170,28 @@ export default {
           }
         },
         {
+          text: 'Buyer Name',
+          align: 'center',
+          value: 'buyer_c',
+          filter: (f) => { return (f + '').toLowerCase().includes(this.buyer.toLowerCase()) }
+        },
+        {
+          text: 'Location',
+          align: 'center',
+          value: 'location_c',
+          filter: (f) => { return (f + '').toLowerCase().includes(this.location.toLowerCase()) }
+        },
+        {
           text: 'Categories',
           sortable: false,
           value: 'categories',
           filter: (f) => {
             if (f !== '') {
+              const itemsArray = JSON.parse(f.replace(/'/g, '"').replace(/"\[/g, '[').replace(/\]"/g, ']').toLowerCase())
               if (this.categories.length === 0 || this.categories.includes('All')) {
                 return true
               }
-              const result = this.categories.filter(value => f.includes(value))
+              const result = this.categories.filter(value => itemsArray.includes(value.toLowerCase()))
               if (result.length > 0) {
                 return true
               } else {
@@ -218,37 +202,26 @@ export default {
             }
           }
         },
-        // {
-        //   text: 'Number of Shareholders',
-        //   value: 'num_shareholders',
-        //   align: 'center',
-        //   filter: (value) => {
-        //     if (!this.num_shareholders) { return true }
-        //     return value > parseInt(this.num_shareholders)
-        //   }
-        // },
         {
-          text: 'Prediction',
+          text: 'Verification',
           align: 'center',
-          value: 'predicted_status',
+          value: 'status_c',
           filter: (value) => {
             if (this.status.length === 0) { return true }
             return this.status.includes(value)
           }
         },
-        { text: 'Actions', value: 'actions' }
+        { text: 'Sales Invoice', value: 'actions' }
 
       ],
-      // startups: require('../../assets/data/data.json')
       startups: require('../../assets/data/expenses.json')
-
     }
   },
   computed: {
   },
   methods: {
     getColor (category) {
-      const result = this.colors.find((c) => { return c.id === category })
+      const result = this.colors.find((c) => { return c.name === category })
       if (result) {
         return result.color
       } else {
@@ -262,20 +235,13 @@ export default {
       this.names.sort()
     },
     showPrintDialog (item) {
-      // Logic to prepare the content for printing
-      // You can format the content as needed, such as creating a separate printable view or modifying the existing content
-
-      // Add CSS media query for print styles
       const printStyles = `
         <style>
-          @media print {
-            /* Add your print-specific styles here */
-          }
         </style>
       `
 
       // Combine the content and print styles
-      const contentToPrint = printStyles + '<h1>Printable Content</h1>' // Replace with your actual content
+      const contentToPrint = printStyles + '<h1>Receipt details</h1>' // Replace with your actual content
 
       // Open a new window and set the content to be printed
       const printWindow = window.open('', '_blank')
@@ -305,7 +271,7 @@ export default {
   font-size: 12px !important;
 }
 
-:deep(.select-category .v-chip.v-size--default) {
-  height: 20px;
+:deep(.select-category .v-chip .v-chip__content) {
+  font-size: 12px !important;
 }
 </style>

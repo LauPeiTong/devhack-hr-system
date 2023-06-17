@@ -8,7 +8,7 @@
       line-chart-vue.pb-8.align-center.pl-4.mb-5.ml-5
     v-col(cols="4")
       company-status-vue.mt-10.align-center.pr-4.pb-4.mb-5.mr-5
-      company-news-vue.pb-8.align-center.pr-4.mb-5.mr-5
+
 </template>
 
 <script>
@@ -17,9 +17,6 @@ import CompanyStatusVue from '~/components/company/CompanyStatus.vue'
 import CompanyDetailsVue from '~/components/company/CompanyDetails.vue'
 import UpperTitleVue from '~/components/UpperTitle.vue'
 import CompanyOverviewVue from '~/components/company/CompanyOverview.vue'
-import CompanyNewsVue from '~/components/company/CompanyNews.vue'
-
-// import LineChartVue from '~/components/employee/LineChart.vue'
 
 export default {
   name: 'CompanyPage',
@@ -27,7 +24,6 @@ export default {
     CompanyStatusVue,
     CompanyDetailsVue,
     CompanyOverviewVue,
-    CompanyNewsVue,
     UpperTitleVue
   },
   layout: 'default',

@@ -2,12 +2,12 @@
 div
  v-card.pa-4.mb-4.rounded-lg(outlined)
    .company.fill-width
-       p.subtitle-3.px-4.pt-2.mb-0 Expenses
+       p.subtitle-3.px-4.pt-2.mb-0 Sales
        p.subtitle-1.font-weight-regular.ml-4.primary--text from 12/8/2023 to 18/6/2023
 
  v-card.pa-4.rounded-lg(outlined)
    .company.fill-width
-       p.subtitle-3.px-4.pt-2.mb-0 Sales
+       p.subtitle-3.px-4.pt-2.mb-0 Net Sales
        p.subtitle-1.font-weight-regular.ml-4.primary--text from 12/8/2023 to 18/6/2023
 </template>
 

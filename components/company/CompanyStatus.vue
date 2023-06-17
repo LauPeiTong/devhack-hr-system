@@ -1,9 +1,32 @@
 <template lang="pug">
-v-card.pa-4.rounded-lg(outlined)
-      .company.fill-width.py-4
-        ApexCharts.d-flex.justify-space-around(type="donut" :options="chartOptions" :series="series" width="320" height="320")
-        a.subtitle-1.px-4.pb-4.mb-0.font-weight-regular.d-flex.justify-space-around View Analysis
-        v-btn(outlined color='#4C5175') Book Mentoring Session
+v-container
+  v-row
+    v-col(cols-12)
+      v-card.pa-3.rounded-lg(outlined)
+          .company.fill-width.py-4
+            ApexCharts.d-flex.justify-space-around(type="donut" :options="chartOptions" :series="series" width="300" height="300")
+            a.subtitle-1.px-4.pb-4.mb-0.font-weight-regular.d-flex.justify-space-around View Analysis
+            v-btn(outlined)(
+              color='#4C5175'
+              @click="onClick"
+            ) Book Mentoring Session
+  v-row
+    v-col(cols="12")
+      v-card.pa-3.rounded-lg(outlined)
+        p Sales achieved
+        v-progress-linear.rounded-xl(
+          :value="20"
+          color='#FFC145'
+          height="20"
+          striped
+        )
+          template(v-slot:default=" { value }")
+            strong.brown--text {{ Math.ceil(value) }}% achieved
+
+        .d-flex.justify-center.mt-3
+          v-btn(outlined)(
+                color='#4C5175'
+          ) Set Target Sales
 </template>
 
 <script>
@@ -32,7 +55,7 @@ export default {
                   showAlways: true,
                   show: true,
                   color: '#333333',
-                  fontSize: '20px',
+                  fontSize: '18px',
                   fontWeight: '600',
                   formatter: function (value) {
                     const t = 30
@@ -74,8 +97,8 @@ export default {
         return this.$vuetify.theme.themes.primary
       }
     },
-    onRowClick (item) {
-      this.$router.push('/company')
+    onClick (item) {
+      this.$router.push('/msessionform')
     }
   }
 }
