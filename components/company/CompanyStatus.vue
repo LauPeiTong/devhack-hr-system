@@ -26,6 +26,7 @@ v-container
         .d-flex.justify-center.mt-3
           v-btn(outlined)(
                 color='#4C5175'
+                @click="onClickInvoice"
           ) Set Target Sales
 </template>
 
@@ -99,6 +100,9 @@ export default {
     },
     onClick (item) {
       this.$router.push('/msessionform')
+    },
+    onClickInvoice (item) {
+      this.$router.push('/invoice')
     }
   }
 }
