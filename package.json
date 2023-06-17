@@ -12,6 +12,7 @@
     "lintfix": "yarn lint:js --fix"
   },
   "dependencies": {
+    "@lossendae/vue-avatar": "^0.1.5",
     "@nuxtjs/axios": "^5.13.6",
     "chart.js": "^2.9.4",
     "core-js": "^3.25.3",

@@ -1,11 +1,11 @@
 <template lang="pug">
-  v-card.pa-4.rounded-lg(outlined)
+v-card.pa-4.rounded-lg(outlined)
       .company.fill-width.py-4
-        p.subtitle-2.px-4.pt-2.mb-0 Prediction
-        p.text-h3.px-4.mb-2.pt-0.green--text Investable
-          ApexCharts.d-flex.justify-space-around(type="donut" :options="chartOptions" :series="series" width="320" height="320")
-        a.subtitle-1.px-4.mb-0.font-weight-regular.d-flex.justify-space-around View Analysis
-
+        ApexCharts.d-flex.justify-space-around(type="donut" :options="chartOptions" :series="series" width="320" height="320")
+        a.subtitle-1.px-4.pb-4.mb-0.font-weight-regular.d-flex.justify-space-around View Analysis
+        v-btn(outlined)(
+          color='#4C5175'
+        ) Book Mentoring Session
 </template>
 
 <script>
@@ -13,7 +13,7 @@ export default {
   name: 'CompanyStatus',
   data () {
     return {
-      series: [14.4, 85.6],
+      series: [50.5, 49.5],
       chartOptions: {
         chart: {
           type: 'donut'
@@ -21,7 +21,7 @@ export default {
         legend: {
           show: false
         },
-        labels: ['Not Investable', 'Investment'],
+        labels: ['', 'Performance'],
         colors: ['#B8B8D1', '#5B5F97'],
         plotOptions: {
           pie: {
@@ -30,19 +30,19 @@ export default {
               labels: {
                 show: true,
                 total: {
-                  label: 'Confidence level',
+                  label: 'Performance level',
                   showAlways: true,
                   show: true,
                   color: '#333333',
                   fontSize: '20px',
                   fontWeight: '600',
                   formatter: function (value) {
-                    const t = 85.6
-                    return t + '%'
+                    const t = 30
+                    return '-' + t + '%'
                   }
                 },
                 value: {
-                  color: '#FFC145',
+                  color: '#FF6B6C',
                   fontSize: '28px',
                   fontWeight: '600'
                 }
@@ -91,4 +91,5 @@ export default {
 .fill-height {
   height: 100% !important;
 }
+
 </style>

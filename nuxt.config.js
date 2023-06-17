@@ -30,7 +30,8 @@ export default {
     { src: '~/plugins/apex-chart.js', mode: 'client' },
     '~/plugins/vuetify.js',
     '~/plugins/currency.js',
-    '~/plugins/list.js'
+    '~/plugins/list.js',
+    '~/plugins/avatar.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
