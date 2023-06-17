@@ -5,6 +5,7 @@ v-card.pa-4.rounded-lg(outlined)
         a.subtitle-1.px-4.pb-4.mb-0.font-weight-regular.d-flex.justify-space-around View Analysis
         v-btn(outlined)(
           color='#4C5175'
+          @click="onClick"
         ) Book Mentoring Session
 </template>
 
@@ -76,8 +77,8 @@ export default {
         return this.$vuetify.theme.themes.primary
       }
     },
-    onRowClick (item) {
-      this.$router.push('/company')
+    onClick (item) {
+      this.$router.push('/msessionform')
     }
   }
 }
