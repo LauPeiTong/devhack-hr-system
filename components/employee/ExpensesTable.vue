@@ -240,7 +240,7 @@ export default {
             return this.status.includes(value)
           }
         },
-        { text: 'Actions', value: 'actions' },
+        { text: 'Actions', value: 'actions' }
 
       ],
       // startups: require('../../assets/data/data.json')
@@ -265,7 +265,7 @@ export default {
     sortNames () {
       this.names.sort()
     },
-    showPrintDialog(item) {
+    showPrintDialog (item) {
       // Logic to prepare the content for printing
       // You can format the content as needed, such as creating a separate printable view or modifying the existing content
 
@@ -276,23 +276,22 @@ export default {
             /* Add your print-specific styles here */
           }
         </style>
-      `;
+      `
 
       // Combine the content and print styles
-      const contentToPrint = printStyles + "<h1>Printable Content</h1>"; // Replace with your actual content
+      const contentToPrint = printStyles + '<h1>Printable Content</h1>' // Replace with your actual content
 
       // Open a new window and set the content to be printed
-      const printWindow = window.open('', '_blank');
-      printWindow.document.write(contentToPrint);
-      printWindow.document.close();
+      const printWindow = window.open('', '_blank')
+      printWindow.document.write(contentToPrint)
+      printWindow.document.close()
 
       // Show confirmation dialog to print or cancel
-      if (confirm("Do you want to print the content?")) {
+      if (confirm('Do you want to print the content?')) {
         // Call the print function on the opened window if user confirms
-        printWindow.print();
+        printWindow.print()
       }
-    },
-  },
+    }
   }
 
 </script>
