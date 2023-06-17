@@ -55,14 +55,11 @@ v-row.justify-center.mx-auto
       template(v-slot:item.id_c="{ item, index }")
         p.mb-0.font-weight-bold E {{ index + 1}}
 
-      template(v-slot:item.name_c="{ item }")
+      template(v-slot:item.date_c="{ item }")
         p.mb-0 {{ parseInt(item.date_c) }}
 
       template(v-slot:item.amount_c="{ item }")
         p.mb-0 {{ $formatCurrency(item.amount_c) }}
-
-      //- template(v-slot:item.num_shareholders="{ item }")
-      //-   p.mb-0 {{ parseInt(item.num_shareholders) }}
 
       template(v-slot:item.categories="{ item }")
           v-chip.my-1(
@@ -71,7 +68,7 @@ v-row.justify-center.mx-auto
             pill
           )
             p.mb-0 {{ item.categories }}
-          p(v-if="item.categories == 'Transportation'") yeayy
+          p(v-if="item.categories == 'Transportation'")    15km
 
       template(v-slot:item.status_c="{ item }")
         v-chip.my-1(
@@ -126,51 +123,17 @@ export default {
         { name: 'Travelling Mileage', color: '#a05195' },
         { name: 'Entertainment', color: '#f95d6a' },
         { name: 'Others', color: '#ff7c43' }
-        // { name: 'Software', color: '#ffa600' },
-        // { name: 'Data and Analytics', color: '#00cc66' },
-        // { name: 'Health Care', color: '#3d9970' },
-        // { name: 'Lending and Investments', color: '#ef5675' },
-        // { name: 'Agriculture and Farming', color: '#7a5195' },
-        // { name: 'Other', color: '#003f5c' },
-        // { name: 'Travel and Tourism', color: '#a05195' },
-        // { name: 'Internet Services', color: '#ff7c43' },
-        // { name: 'Apps', color: '#665191' },
-        // { name: 'Information Technology', color: '#2f4b7c' },
-        // { name: 'Media and Entertainment', color: '#f95d6a' },
-        // { name: 'Video', color: '#00cc66' },
-        // { name: 'Community and Lifestyle', color: '#3d9970' },
-        // { name: 'Science and Engineering', color: '#ef5675' },
-        // { name: 'Biotechnology', color: '#7a5195' },
-        // { name: 'Administrative Services', color: '#003f5c' },
-        // { name: 'Food and Beverage', color: '#a05195' },
-        // { name: 'Government and Military', color: '#ff7c43' },
-        // { name: 'Sports', color: '#665191' },
-        // { name: 'Energy', color: '#2f4b7c' },
-        // { name: 'Natural Resources', color: '#f95d6a' },
-        // { name: 'Education', color: '#ef5675' },
-        // { name: 'Events', color: '#3d9970' },
-        // { name: 'Real Estate', color: '#00cc66' },
-        // { name: 'Content and Publishing', color: '#7a5195' },
-        // { name: 'Manufacturing', color: '#003f5c' },
-        // { name: 'Artificial Intelligence', color: '#a05195' },
-        // { name: 'Professional Services', color: '#ff7c43' },
-        // { name: 'Gaming', color: '#665191' },
-        // { name: 'Privacy and Security', color: '#2f4b7c' },
-        // { name: 'Music and Audio', color: '#f95d6a' },
-        // { name: 'Navigation and Mapping', color: '#42f5aa' },
-        // { name: 'Platforms', color: '#f542b6' },
-        // { name: 'Messaging and Telecommunications', color: '#42f5d2' }
       ],
       headers: [
         {
           text: 'Employee',
-          align: 'start',
+          align: 'center',
           value: 'id_c',
           filter: (f) => { return (f + '').toLowerCase().includes(this.id.toLowerCase()) }
         },
         {
           text: 'Employee Name',
-          align: 'start',
+          align: 'center',
           value: 'name_c',
           filter: (f) => { return (f + '').toLowerCase().includes(this.name.toLowerCase()) }
         },
@@ -185,13 +148,13 @@ export default {
         },
         {
           text: 'Description',
-          align: 'start',
+          align: 'center',
           value: 'description_c',
           filter: (f) => { return (f + '').toLowerCase().includes(this.description.toLowerCase()) }
         },
         {
           text: 'Amount',
-          align: 'end',
+          align: 'center',
           value: 'amount_c',
           filter: (value) => {
             if (!this.amount) { return true }
@@ -218,17 +181,8 @@ export default {
             }
           }
         },
-        // {
-        //   text: 'Number of Shareholders',
-        //   value: 'num_shareholders',
-        //   align: 'center',
-        //   filter: (value) => {
-        //     if (!this.num_shareholders) { return true }
-        //     return value > parseInt(this.num_shareholders)
-        //   }
-        // },
         {
-          text: 'Prediction',
+          text: 'Verification',
           align: 'center',
           value: 'status_c',
           filter: (value) => {
@@ -239,7 +193,6 @@ export default {
         { text: 'Actions', value: 'actions' }
 
       ],
-      // startups: require('../../assets/data/data.json')
       startups: require('../../assets/data/expenses.json')
 
     }
@@ -268,7 +221,7 @@ export default {
       `
 
       // Combine the content and print styles
-      const contentToPrint = printStyles + '<h1>Printable Contenthbjjhkhkj</h1>' // Replace with your actual content
+      const contentToPrint = printStyles + '<h1>Receipt details</h1>' // Replace with your actual content
 
       // Open a new window and set the content to be printed
       const printWindow = window.open('', '_blank')
