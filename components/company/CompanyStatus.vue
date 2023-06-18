@@ -43,8 +43,27 @@ v-container
   v-row.pa-0.mt-5
     v-col.pa-0(cols="12")
       v-card.pa-3.rounded-lg(outlined)
-        h3.fw-600.secondary--text.mb-4.px-4.pt-4 Sales Category
+        h3.fw-600.secondary--text.px-4.pt-4 Sales Category
+        .d-flex.align-center.px-4
+          p.mb-1.mr-2.primary--text 1 June 2022 - 1 July 2023
+          eva-icon(name="calendar" :fill="$vuetify.theme.themes.light.primary" width="18" height="18")
         ApexCharts.d-flex.justify-space-around(type="radialBar" :options="options2" :series="series2" width="300" height="300")
+        p.body-2.px-4.mb-0.secondary--text.text-center The category with highest sales is
+          |
+          span.danger--text  Affordable Housing
+        v-card.rounded-lg.ma-4.px-4.py-2(outlined)
+          strong.fw-600.darkGrey--text Residential Property
+          h3.primary--text RM 144000
+        v-card.rounded-lg.ma-4.px-4.py-2(outlined)
+          strong.fw-600.darkGrey--text Commercial Property
+          h3.primary--text RM 240000
+        v-card.rounded-lg.ma-4.px-4.py-2(outlined)
+          strong.fw-600.darkGrey--text Luxury Property
+          h3.primary--text RM 124000
+        v-card.rounded-lg.ma-4.px-4.py-2(outlined)
+          strong.fw-600.darkGrey--text Affordable Housing
+          h3.primary--text RM 300000
+
 </template>
 
 <script>
