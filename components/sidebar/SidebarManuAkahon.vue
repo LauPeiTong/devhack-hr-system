@@ -252,7 +252,7 @@ export default {
     },
     profileName: {
       type: String,
-      default: 'Choo Cheng'
+      default: 'Sarween'
     },
     profileRole: {
       type: String,
@@ -345,7 +345,7 @@ export default {
   },
   methods: {
     checkRoute (link) {
-      if (link === '/dashboard' && this.$route.name === 'employee' && this.$route.name === 'invoice' && this.$route.name === 'expenses') { return true }
+      if (link === '/dashboard' || this.$route.name === '/employee' || this.$route.name === '/invoice' || this.$route.name === '/expenses') { return true }
       return ('/' + this.$route.name) === link
     },
     tooltipAttached () {
@@ -423,19 +423,19 @@ export default {
     position: relative;
   }
   .sidebar .logo-details .icon {
-    opacity: 0%;
+    opacity: 0;
     transition: all 0.5s ease;
   }
   .sidebar .logo-details .logo_name {
     color: var(--logo-title-color);
     font-size: 20px;
     font-weight: 600;
-    opacity: 0%;
+    opacity: 0;
     transition: all 0.5s ease;
   }
   .sidebar.open .logo-details .icon,
   .sidebar.open .logo-details .logo_name {
-    opacity: 100%;
+    opacity: 1;
   }
   .sidebar .logo-details #btn {
     position: absolute;
@@ -482,13 +482,13 @@ export default {
     border-radius: 4px;
     font-size: 15px;
     font-weight: 400;
-    opacity: 0%;
+    opacity: 0;
     white-space: nowrap;
     pointer-events: none;
     transition: 0s;
   }
   .tooltip.active {
-    opacity: 100%;
+    opacity: 1;
     pointer-events: auto;
     transition: all 0.4s ease;
     /* top: 50%; */
@@ -517,7 +517,7 @@ export default {
     color: var(--search-input-text-color);
   }
   .sidebar:not(.open) ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    opacity: 0%; /* Firefox */
+    opacity: 0; /* Firefox */
   }
   .sidebar .bx-search {
     position: absolute;
@@ -554,12 +554,12 @@ export default {
     font-size: 15px;
     font-weight: 400;
     white-space: nowrap;
-    opacity: 0%;
+    opacity: 0;
     pointer-events: none;
     transition: 0.4s;
   }
   .sidebar.open li a .links_name {
-    opacity: 100%;
+    opacity: 1;
     pointer-events: auto;
   }
   .sidebar li a:hover .links_name,
@@ -585,12 +585,12 @@ export default {
     font-size: 15px;
     font-weight: 400;
     white-space: nowrap;
-    opacity: 0%;
+    opacity: 0;
     pointer-events: none;
     transition: 0.4s;
   }
   .sidebar.open li router-link .links_name {
-    opacity: 100%;
+    opacity: 1;
     pointer-events: auto;
   }
   .sidebar li router-link:hover .links_name,
@@ -668,13 +668,13 @@ export default {
   .sidebar.open .profile #log_out {
     width: 50px;
     background: var(--secondary-color);
-    opacity: 0%;
+    opacity: 0;
   }
   .sidebar.open .profile:hover #log_out {
-    opacity: 100%;
+    opacity: 1;
   }
   .sidebar.open .profile #log_out:hover {
-    opacity: 100%;
+    opacity: 1;
     color: white;
   }
   .sidebar .profile #log_out:hover {
