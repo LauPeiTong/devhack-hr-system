@@ -43,6 +43,8 @@ v-container
   v-row.pa-0.mt-5
     v-col.pa-0(cols="12")
       v-card.pa-3.rounded-lg(outlined)
+        h3.fw-600.secondary--text.mb-4.px-4.pt-4 Sales Category
+        ApexCharts.d-flex.justify-space-around(type="radialBar" :options="options2" :series="series2" width="300" height="300")
 </template>
 
 <script>
@@ -92,6 +94,35 @@ export default {
           lineCap: 'round'
         },
         labels: ['Performance Level']
+      },
+      series2: [40, 40, 20, 80],
+      options2: {
+        chart: {
+          height: 280,
+          type: 'radialBar'
+        },
+        plotOptions: {
+          radialBar: {
+            dataLabels: {
+              total: {
+                show: true,
+                label: 'TOTAL',
+                fontSize: '20px',
+                fontWeight: '600',
+                formatter: function (value) {
+                  const t = value.globals.series.reduce((a, b) => b + a, 0)
+                  return 'RM ' + t.toString() + 'K'
+                }
+              },
+              value: {
+                color: '#0083BB',
+                fontSize: '25px',
+                fontWeight: '600'
+              }
+            }
+          }
+        },
+        labels: ['Residential Property', 'Commercial Property', 'Luxury Property', 'Affordable Housing']
       }
     }
   },
