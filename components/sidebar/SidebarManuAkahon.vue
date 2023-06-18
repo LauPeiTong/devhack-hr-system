@@ -252,7 +252,7 @@ export default {
     },
     profileName: {
       type: String,
-      default: 'Sarween'
+      default: 'Choo Cheng'
     },
     profileRole: {
       type: String,
@@ -345,7 +345,7 @@ export default {
   },
   methods: {
     checkRoute (link) {
-      if (link === '/dashboard' && this.$route.name === 'company') { return true }
+      if (link === '/dashboard' && this.$route.name === 'employee' && this.$route.name === 'invoice' && this.$route.name === 'expenses') { return true }
       return ('/' + this.$route.name) === link
     },
     tooltipAttached () {

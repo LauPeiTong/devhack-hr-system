@@ -175,7 +175,7 @@
               .d-flex.flex-no-wrap.justify-space-between
                 .company
                   .d-flex.flex-wrap.align-center
-                    p.mb-1.text-h6.pr-2 Yap Vun Xin
+                    p.mb-1.text-h6.pr-2 Sarween
                     v-chip.chip-small.mb-1(
                       :color="$vuetify.theme.themes.light.danger"
                       outlined
