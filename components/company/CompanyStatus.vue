@@ -106,9 +106,6 @@ export default {
     },
     onClick (item) {
       this.$router.push('/msessionform')
-    },
-    onClickInvoice (item) {
-      this.$router.push('/invoice')
     }
   }
 }

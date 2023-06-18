@@ -73,7 +73,7 @@ v-row.justify-center.mx-auto
           p.mb-0 {{ item.status_c }}
 
       template(v-slot:item.actions="{ item }")
-        v-btn.small(@click="showPrintDialog(item)" :style="{ backgroundColor: '#007bff', color: '#ffffff', borderRadius: '5px', padding: '8px 16px' }") Show PDF
+        v-btn.small.rounded-lg(@click="showPrintDialog(item)" outlined) Invoice
 
 </template>
 
@@ -210,24 +210,25 @@ export default {
       this.names.sort()
     },
     showPrintDialog (item) {
-      const printStyles = `
-        <style>
-        </style>
-      `
+      // const printStyles = `
+      //   <style>
+      //   </style>
+      // `
 
-      // Combine the content and print styles
-      const contentToPrint = printStyles + '<h1>Receipt details</h1>' // Replace with your actual content
+      // // Combine the content and print styles
+      // const contentToPrint = printStyles + '<h1>Receipt details</h1>' // Replace with your actual content
 
-      // Open a new window and set the content to be printed
-      const printWindow = window.open('', '_blank')
-      printWindow.document.write(contentToPrint)
-      printWindow.document.close()
+      // // Open a new window and set the content to be printed
+      // const printWindow = window.open('', '_blank')
+      // printWindow.document.write(contentToPrint)
+      // printWindow.document.close()
 
-      // Show confirmation dialog to print or cancel
-      if (confirm('Do you want to print the content?')) {
-        // Call the print function on the opened window if user confirms
-        printWindow.print()
-      }
+      // // Show confirmation dialog to print or cancel
+      // if (confirm('Do you want to print the content?')) {
+      //   // Call the print function on the opened window if user confirms
+      //   printWindow.print()
+      // }
+      this.$router.push('/invoice')
     }
   }
 }
