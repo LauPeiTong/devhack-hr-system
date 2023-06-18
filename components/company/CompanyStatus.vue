@@ -1,32 +1,48 @@
 <template lang="pug">
 v-container
-  v-row
-    v-col(cols-12)
+  v-row.pa-0.mb-5
+    v-col.pa-0(cols-12)
       v-card.pa-3.rounded-lg(outlined)
-          .company.fill-width.py-4
-            ApexCharts.d-flex.justify-space-around(type="donut" :options="chartOptions" :series="series" width="300" height="300")
-            a.subtitle-1.px-4.pb-4.mb-0.font-weight-regular.d-flex.justify-space-around View Analysis
-            v-btn(outlined)(
+        .company.fill-width.py-4
+          h3.fw-600.secondary--text.mb-4.px-4 Performance Analysis
+          ApexCharts.d-flex.justify-space-around.neg-margin-2(type="radialBar" :options="options" :series="series" width="300" height="300")
+          .d-grid.text-center.justify-center.neg-margin
+            a.subtitle-1.px-4.mb-0.font-weight-regular View Analysis
+            p.body-2.px-4.pt-2.mb-0.secondary--text Total sales decreases
+              |
+              span.danger--text  12.0%
+              |
+              span.secondary--text  in these 3 months
+            p.body-2.px-4.mb-0.secondary--text Target sales is not achieved for
+              |
+              span.danger--text  3 months
+            v-btn.mt-2(outlined)(
               color='#4C5175'
               @click="onClick"
             ) Book Mentoring Session
-  v-row
-    v-col(cols="12")
-      v-card.pa-3.rounded-lg(outlined)
-        p Sales achieved
-        v-progress-linear.rounded-xl(
-          :value="20"
-          color='#FFC145'
-          height="20"
-          striped
-        )
-          template(v-slot:default=" { value }")
-            strong.brown--text {{ Math.ceil(value) }}% achieved
+        hr.mx-2.my-4
 
-        .d-flex.justify-center.mt-3
-          v-btn(outlined)(
-                color='#4C5175'
-          ) Set Target Sales
+        .company.fill-width.py-4.px-4
+          v-card.mx-4.pa-4.rounded-xl.mb-4.text-center(outlined)
+            strong.darkGrey--text.mb-0 Total Points
+            h1.orange--text 210 Points
+          p.darkGrey--text.mb-0 Target Sales:
+          h2.primary--text RM 300000.00
+          v-progress-linear.rounded-xl.mt-2.mb-1(
+            :value="20"
+            color='#FFC145'
+            height="20"
+            striped
+          )
+            template(v-slot:default=" { value }")
+              p.mb-0.brown--text {{ Math.ceil(value) }}% achieved
+          p.text-center Total Sales: RM45784.50
+
+          .d-flex.justify-center.mt-3
+            v-btn(outlined color='#4C5175') Set Target Sales
+  v-row.pa-0.mt-5
+    v-col.pa-0(cols="12")
+      v-card.pa-3.rounded-lg(outlined)
 </template>
 
 <script>
@@ -34,57 +50,48 @@ export default {
   name: 'CompanyStatus',
   data () {
     return {
-      series: [50.5, 49.5],
-      chartOptions: {
+      series: [30],
+      options: {
         chart: {
-          type: 'donut'
+          height: 280,
+          type: 'radialBar'
         },
-        legend: {
-          show: false
-        },
-        labels: ['', 'Performance'],
-        colors: ['#B8B8D1', '#5B5F97'],
+
         plotOptions: {
-          pie: {
-            expandOnClick: true,
-            donut: {
-              labels: {
+          radialBar: {
+            startAngle: -90,
+            endAngle: 90,
+            track: {
+              startAngle: -90,
+              endAngle: 90
+            },
+            hollow: {
+              margin: 15,
+              size: '70%'
+            },
+
+            dataLabels: {
+              showOn: 'always',
+              name: {
+                offsetY: -40,
                 show: true,
-                total: {
-                  label: 'Performance level',
-                  showAlways: true,
-                  show: true,
-                  color: '#333333',
-                  fontSize: '18px',
-                  fontWeight: '600',
-                  formatter: function (value) {
-                    const t = 30
-                    return '-' + t + '%'
-                  }
-                },
-                value: {
-                  color: '#FF6B6C',
-                  fontSize: '28px',
-                  fontWeight: '600'
-                }
+                color: '#888',
+                fontSize: '13px'
+              },
+              value: {
+                offsetY: -20,
+                color: '#111',
+                fontSize: '30px',
+                show: true
               }
             }
           }
         },
-        responsive: [{
-          breakpoint: 480,
-          options: {
-            chart: {
-              width: 300
-            },
-            legend: {
-              position: 'bottom'
-            }
-          }
-        }],
-        dataLabels: {
-          enabled: false
-        }
+
+        stroke: {
+          lineCap: 'round'
+        },
+        labels: ['Performance Level']
       }
     }
   },
@@ -112,5 +119,13 @@ export default {
 .fill-height {
   height: 100% !important;
 }
-
+.neg-margin {
+  margin-top: -50px;
+}
+.neg-margin-2 {
+  margin-top: -20px;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
 </style>

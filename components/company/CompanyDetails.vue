@@ -1,11 +1,10 @@
 <template lang="pug">
 v-card.pa-4.rounded-lg(outlined)
-  v-card-title.py-0
-    p.mb-2 Employee details
   v-card-text
+      h2.fw-600.secondary--text.mb-4 Employee details
       .d-flex.flex-no-wrap.justify-space-between.align-center
         .company.fill-width
-            v-card.px-4.py-2(outlined)
+            v-card.px-4.py-2.rounded-xl(outlined)
               v-card-title.pa-0.mb-2
                 p.mb-0.primary--text Kim Junkyu
               p.subtitle-1.mb-0.font-weight-medium Position:
@@ -65,5 +64,9 @@ export default {
 
 .fill-height {
   height: 100% !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
 }
 </style>

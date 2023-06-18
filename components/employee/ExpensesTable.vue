@@ -19,15 +19,10 @@ v-row.justify-center.mx-auto
       :items="startups"
       :search="search"
       multi-sort
-      @click:row="onRowClick"
     )
 
       template(v-slot:body.prepend)
         tr
-          td.py-4
-            v-text-field(v-model="id" type="text" label="Employee ID" hide-details="auto" dense outlined)
-          td.py-4
-            v-text-field(v-model="name" type="text" label="Employee Name" hide-details="auto" dense outlined)
           td.py-4
             v-text-field(v-model="description" type="text" label="More than" hide-details="auto" dense outlined)
           td.py-4
@@ -52,17 +47,10 @@ v-row.justify-center.mx-auto
               template(v-slot:selection="{ item, index }")
                 v-chip(:color="item.status_c == 'Verified'? '#3d9970' : '#FF6B6C'" outlined)
                   span {{ item }}
-
-      template(v-slot:item.id_c="{ item, index }")
-        p.mb-0.font-weight-bold E {{ index + 1}}
-
-      //- template(v-slot:item.name_c="{ item }")
-      //-   .d-flex.align-center
-      //-     VueAvatar(:username="item.name" :size="24" :colors="avatarColor" :customStyles="{'color': 'white'}")
-      //-     span.ml-2.caption {{item.name}}
+          td.py-4
 
       template(v-slot:item.date_c="{ item }")
-        p.mb-0 {{ parseInt(item.date_c) }}
+        p.mb-0 {{ item.date_c }}
 
       template(v-slot:item.amount_c="{ item }")
         p.mb-0 {{ $formatCurrency(item.amount_c) }}
@@ -133,18 +121,6 @@ export default {
         { name: 'Others', color: '#ff7c43' }
       ],
       headers: [
-        {
-          text: 'Employee',
-          align: 'center',
-          value: 'id_c',
-          filter: (f) => { return (f + '').toLowerCase().includes(this.id.toLowerCase()) }
-        },
-        {
-          text: 'Employee Name',
-          align: 'center',
-          value: 'name_c',
-          filter: (f) => { return (f + '').toLowerCase().includes(this.name.toLowerCase()) }
-        },
         {
           text: 'Date',
           align: 'center',
@@ -229,7 +205,6 @@ export default {
       }
     },
     onRowClick (item) {
-      this.$router.push('/employee')
     },
     sortNames () {
       this.names.sort()

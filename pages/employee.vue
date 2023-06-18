@@ -4,7 +4,7 @@
   v-row.ma-0.pt-8.fill-width
     v-col(cols="8")
       company-details-vue.mt-10.align-center.pl-4.pb-4.mb-5.ml-5
-      company-overview-vue.pb-8.align-center.pl-4.mb-5.ml-5
+      //- company-overview-vue.pb-8.align-center.pl-4.mb-5.ml-5
       line-chart-vue.pb-8.align-center.pl-4.mb-5.ml-5
     v-col(cols="4")
       company-status-vue.mt-10.align-center.pr-4.pb-4.mb-5.mr-5
@@ -16,6 +16,7 @@ import { mapGetters } from 'vuex'
 import CompanyStatusVue from '~/components/company/CompanyStatus.vue'
 import CompanyDetailsVue from '~/components/company/CompanyDetails.vue'
 import UpperTitleVue from '~/components/UpperTitle.vue'
+import LineChartVue from '~/components/employee/LineChart.vue'
 import CompanyOverviewVue from '~/components/company/CompanyOverview.vue'
 
 export default {
@@ -24,6 +25,7 @@ export default {
     CompanyStatusVue,
     CompanyDetailsVue,
     CompanyOverviewVue,
+    LineChartVue,
     UpperTitleVue
   },
   layout: 'default',
