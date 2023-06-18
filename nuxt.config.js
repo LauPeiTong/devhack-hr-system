@@ -16,7 +16,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      { rel: 'stylesheet', type: 'image/x-icon', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
       { rel: 'icon', type: 'image/x-icon', href: '/seedify.png' }
     ]
   },
