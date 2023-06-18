@@ -5,8 +5,11 @@ v-card.pa-4.rounded-lg(outlined)
       .d-flex.flex-no-wrap.justify-space-between.align-center
         .company.fill-width
             v-card.px-4.py-2.rounded-xl(outlined)
-              v-card-title.pa-0.mb-2
+              v-card-title.pa-0
                 p.mb-0.primary--text Kim Junkyu
+              .d-flex.align-center.justify-start
+                p.mb-1.orange--text 4/10
+                eva-icon(name="star" :height="16" :fill="$vuetify.theme.themes.light.orange")
               p.subtitle-1.mb-0.font-weight-medium Position:
                 |
                 v-chip.chip-small.mb-1.ml-2(
