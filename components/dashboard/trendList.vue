@@ -125,7 +125,7 @@
               .d-flex.flex-no-wrap.justify-space-between
                 .company
                   .d-flex.flex-wrap.align-center
-                    p.mb-1.text-h6.pr-2 Malcolmn Tan
+                    p.mb-1.text-h6.pr-2 David Tan
                     v-chip.chip-small.mb-1(
                       :color="$vuetify.theme.themes.light.danger"
                       outlined

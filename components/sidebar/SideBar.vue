@@ -2,7 +2,7 @@
 sidebar-menu-akahon(
   :menuItems="menus"
   :isUsedVueRouter="true"
-  :menuTitle="'Seedify'"
+  :menuTitle="'HR App'"
   :menuLogo="require(`../../assets/seedify.png`)"
   :bgColor="'white'"
   :secondaryColor="$vuetify.theme.themes.light.primary"
