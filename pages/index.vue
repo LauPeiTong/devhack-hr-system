@@ -12,7 +12,7 @@ export default {
     }
   },
   created () {
-    setTimeout(() => this.$router.push({ path: '/dashboard' }), 1000)
+    setTimeout(() => this.$router.push({ path: '/booking' }), 1000)
   },
   methods: {
 
