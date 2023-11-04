@@ -18,7 +18,7 @@ import CompanyDetailsVue from '~/components/company/CompanyDetails.vue'
 import UpperTitleVue from '~/components/UpperTitle.vue'
 import LineChartVue from '~/components/employee/LineChart.vue'
 import CompanyOverviewVue from '~/components/company/CompanyOverview.vue'
-
+// Mathematics, Analytical, Problem Solving
 export default {
   name: 'CompanyPage',
   components: {
