@@ -1,35 +1,14 @@
 <template lang="pug">
 v-row.justify-center.mx-auto
-  v-col(:cols="4")
-    v-card.rounded-lg
-      v-card-title.pb-0
-        p.mb-0.text-h6.primary--text Residential Assets
-      v-card-text
-        .d-flex.align-center.mb-2
-          .caption.secondary--text.mb-1.mr-1 Top Sellers (1 June 2023 - 1 July 2023)
-          eva-icon(name="calendar" :fill="$vuetify.theme.themes.light.primary" width="16" height="16")
-        v-card.px-4.py-2.mb-2(outlined)
-          .d-flex.flex-no-wrap.justify-space-between
-            .company
-              .d-flex.flex-wrap.align-center
-                p.mb-1.text-h6.pr-2 Dylan Tan
-                v-chip.chip-small.mb-1(
-                  :color="$vuetify.theme.themes.light.danger"
-                  outlined
-                  pill
-                )
-                  p.mb-0.caption 210 Points
-              p.mb-0 Total Sales: RM 300,000.00
-              p.mb-0.green--text +50.2%
-
-            v-avatar(
-              class="ma-1"
-              size="60"
-              tile
-            )
-              v-img(:src="require(`../../assets/employee/1.png`)")
-
-        v-card.px-4.py-2.mb-2(outlined)
+    v-col(:cols="4")
+      v-card.rounded-lg
+        v-card-title.pb-0
+          p.mb-0.text-h6.primary--text Residential Properties
+        v-card-text
+          .d-flex.align-center.mb-2
+            .caption.secondary--text.mb-1.mr-1 Top Sellers (1 June 2023 - 1 July 2023)
+            eva-icon(name="calendar" :fill="$vuetify.theme.themes.light.primary" width="16" height="16")
+          v-card.px-4.py-2.mb-2(outlined)
             .d-flex.flex-no-wrap.justify-space-between
               .company
                 .d-flex.flex-wrap.align-center

@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-row.py-4.pl-4.upper-title(dense :class="titleClass")
+v-row.py-4.pl-4.upper-title(dense :class="titleClass")
     v-col(:cols="10")
       h3.font-weight-medium(:class="textColor") {{ title }}
     v-col.text-right.pr-4(:cols="2")

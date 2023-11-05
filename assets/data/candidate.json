@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Lau Pei Tong",
+    "occupation": "Senior Software Engineer",
+    "similarity": 90
+  },
+  {
+    "id": 2,
+    "name": "Lee Wen Jie",
+    "occupation": "Student",
+    "similarity": 50
+  },
+  {
+    "id": 3,
+    "name": "Aiman Humaira",
+    "occupation": "Software Developer",
+    "similarity": 75
+  },
+  {
+    "id": 4,
+    "name": "Sashamikha Rajakumar",
+    "occupation": "Software Engineer",
+    "similarity": 85
+  },
+  {
+    "id": 5,
+    "name": "Lau Say Heng",
+    "occupation": "Frontend Software Developer",
+    "similarity": 80
+  },
+  {
+    "id": 6,
+    "name": "Tan Se Han",
+    "occupation": "Machine Learning Engineer",
+    "similarity": 75
+  },
+  {
+    "id": 7,
+    "name": "Ng Yu Hui",
+    "occupation": "Software Engineer",
+    "similarity": 85
+  },
+  {
+    "id": 8,
+    "name": "Nurul Afiqah",
+    "occupation": "Frontend Software Developer",
+    "similarity": 70
+  },
+  {
+    "id": 9,
+    "name": "Muhammad Syafiq",
+    "occupation": "Backend Software Developer",
+    "similarity": 65
+  },
+  {
+    "id": 10,
+    "name": "Chen Jia Jun",
+    "occupation": "Data Engineer",
+    "similarity": 80
+  },
+  {
+    "id": 11,
+    "name": "Amir Syariffudin",
+    "occupation": "Student",
+    "similarity": 55
+  },
+  {
+    "id": 12,
+    "name": "Nalan A/L Sivanesan",
+    "occupation": "Frontend Software Developer",
+    "similarity": 70
+  },
+  {
+    "id": 13,
+    "name": "Lim Zhi Wei",
+    "occupation": "IT Manager",
+    "similarity": 95
+  },
+  {
+    "id": 14,
+    "name": "Muhammad Hanif Murtaza",
+    "occupation": "Software Engineer",
+    "similarity": 90
+  },
+  {
+    "id": 15,
+    "name": "Teevanraj A/L Palani",
+    "occupation": "Data Analyst",
+    "similarity": 70
+  },
+  {
+    "id": 16,
+    "name": "Yang Zi Xun",
+    "occupation": "Senior Software Engineer",
+    "similarity": 98
+  },
+  {
+    "id": 17,
+    "name": "Ainul Zafir Bin Adni",
+    "occupation": "Software Engineer",
+    "similarity": 90
+  },
+  {
+    "id": 18,
+    "name": "Khairul Anwar Bin Mohd Zain",
+    "occupation": "Software Engineer",
+    "similarity": 80
+  },
+  {
+    "id": 19,
+    "name": "Kavinraj A/L Subrayan",
+    "occupation": "Data Analyst",
+    "similarity": 75
+  },
+  {
+    "id": 20,
+    "name": "Woo Hui Wern",
+    "occupation": "Senior Software Engineer",
+    "similarity": 85
+  }
+]
