@@ -42,7 +42,8 @@ v-card.rounded-lg
             )
               v-img(:src="require(`../../assets/employee/1.png`)")
           v-row.pl-10
-            <v-btn class="ma-1" color="primary">Send Offer</v-btn>
+            //- <v-btn class="ma-1" color="primary">Send Offer</v-btn>
+            candidateButton
 
     v-card.px-4.py-2.mb-2(outlined)
       .d-flex.flex-no-wrap.justify-space-between
@@ -131,11 +132,12 @@ v-card.rounded-lg
 </template>
 
 <script>
+import candidateButton from './candidateButton.vue'
 export default {
   name: 'CandidateList',
   data () {
     return {
-
+      candidateButton
     }
   },
   computed: {
