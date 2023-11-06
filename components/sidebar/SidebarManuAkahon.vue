@@ -345,7 +345,7 @@ export default {
   },
   methods: {
     checkRoute (link) {
-      if (link === '/dashboard' || this.$route.name === '/employee' || this.$route.name === '/invoice' || this.$route.name === '/expenses') { return true }
+      if (link === this.$route.name) { return true }
       return ('/' + this.$route.name) === link
     },
     tooltipAttached () {
@@ -529,12 +529,8 @@ export default {
     color: var(--icons-color);
   }
   .sidebar.open .bx-search:hover {
-    background: var(--secondary-color);
-    color: var(--icons-color);
   }
   .sidebar .bx-search:hover {
-    background: var(--menu-items-hover-color);
-    color: var(--bg-color);
   }
   .sidebar li a {
     display: flex;

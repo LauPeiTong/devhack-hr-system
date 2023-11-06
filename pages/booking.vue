@@ -43,9 +43,9 @@ export default {
         })
         if (response.ok) {
           const result = await response.json()
-          this.skills = result.resumes[0].skills[0]
-          this.experience = result.resumes[0].experience[0].title
-          this.achievements = result.resumes[0].achievements[0]
+          this.skills = result.candidates[0].skills[0]
+          this.experience = result.candidates[0].experience[0].title
+          this.achievements = result.candidates[0].achievements[0]
         } else {
           this.skills = 'Failed to fetch Data'
         }

@@ -30,16 +30,16 @@ export default {
           icon: 'bx-grid-alt'
         },
         {
-          link: '/',
-          name: 'Employees',
-          tooltip: 'Employees',
+          link: '/candidates',
+          name: 'Candidates',
+          tooltip: 'Candidates',
           icon: 'bx-bar-chart-square'
         },
         {
-          link: '/',
-          name: 'Performance',
-          tooltip: 'Performance',
-          icon: 'bx-wallet-alt'
+          link: '/chatbot',
+          name: 'Chatbot',
+          tooltip: 'Chatbot',
+          icon: 'bx-message'
         },
         {
           link: '/',

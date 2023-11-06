@@ -16,7 +16,7 @@ v-container
             p.body-2.px-4.mb-0.secondary--text Target sales is not achieved for
               |
               span.danger--text  3 months
-            v-btn.mt-2(outlined)(
+            v-btn.mt-2(outlined
               color='#4C5175'
               @click="onClick"
             ) Book Mentoring Session

@@ -1,0 +1,23 @@
+body {
+  background: linear-gradient(180deg, #4C5175 25%, #F8F8F8 25%) !important;
+}
+
+body, .v-application {
+  background-color: #F9F4F4 !important;
+  background-image: linear-gradient(180deg, #4C5175 25%, #F8F8F8 25%) !important;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 30%;
+}
+
+.max-width-1400 {
+  max-width: 1400px;
+}
+
+.fill-width {
+  width: 100% !important;
+}
+
+md-icon {
+  font-family: "Material Icons" !important;
+}/*# sourceMappingURL=variables.css.map */
