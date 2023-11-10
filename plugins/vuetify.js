@@ -24,7 +24,8 @@ export default new Vuetify({
         lightRed2: '#f2e7e7',
         lightRed3: '#ebdbdb',
         lightBlue: '#e5e6ee',
-        lightBlue2: '#aaaec8'
+        lightBlue2: '#aaaec8',
+        lightBlue3: '#E5E6EE'
       }
     }
   }

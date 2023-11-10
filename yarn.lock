@@ -11868,6 +11868,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sortablejs@npm:1.10.2":
+  version: 1.10.2
+  resolution: "sortablejs@npm:1.10.2"
+  checksum: 37f8d47a9702b93c38077c5e0af90174dcf8e95cf96fe61a722033003eb293bdf3832e4a943f281eaedc433e24cd7d5a48a408706a71a21e75bc11ced0b358da
+  languageName: node
+  linkType: hard
+
 "source-list-map@npm:^2.0.0":
   version: 2.0.1
   resolution: "source-list-map@npm:2.0.1"
@@ -13116,6 +13123,7 @@ __metadata:
     eslint: ^8.24.0
     eslint-plugin-nuxt: ^4.0.0
     eslint-plugin-vue: ^9.5.1
+    file-loader: ^6.2.0
     nuxt: ^2.15.8
     pug: ^3.0.2
     pug-plain-loader: ^1.1.0
@@ -13125,6 +13133,7 @@ __metadata:
     vue-full-calendar: ^2.8.1-0
     vue-server-renderer: ^2.7.10
     vue-template-compiler: ^2.7.10
+    vuedraggable: ^2.24.3
     vuetify: ^2.6.10
   languageName: unknown
   linkType: soft
@@ -13301,6 +13310,15 @@ __metadata:
     "@vue/compiler-sfc": 2.7.15
     csstype: ^3.1.0
   checksum: b829a42b60a3388c23735390412011c7859226ba6eb43ceda8eabb295e67b00d3db941b8fa8660682f463ed1028a2da8dff6db29a72efd67f0fc0088de1bb334
+  languageName: node
+  linkType: hard
+
+"vuedraggable@npm:^2.24.3":
+  version: 2.24.3
+  resolution: "vuedraggable@npm:2.24.3"
+  dependencies:
+    sortablejs: 1.10.2
+  checksum: 5fbdf829c1d9fe1aa206a2e23e058524e8e5ee48aa7b682922b07cb59115891f56c681aa57d2952a43054f23af08504f381da84625d7409d699977790dc870c8
   languageName: node
   linkType: hard
 

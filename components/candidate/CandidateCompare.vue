@@ -1,11 +1,11 @@
 <template lang="pug">
 v-row.candidate-compare.justify-center.mx-auto
-  v-card.px-6.pb-6.rounded-lg.fill-width
+  v-card.px-6.pb-6.rounded-lg.fill-width(elevation="0")
     v-card-title.px-0.pb-0
       p.mb-0 Candidates Comparison
       v-spacer
     .d-flex.align-center
-      .body-2.mb-1.mr-2.primary--text Total: 3 Candidates
+      .body-2.mb-1.mr-2.primary--text Total: {{ candidates.length + selectedCandidates.length }} Candidates
     hr.my-4
 
     v-row

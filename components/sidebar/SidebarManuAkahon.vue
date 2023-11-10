@@ -345,7 +345,8 @@ export default {
   },
   methods: {
     checkRoute (link) {
-      if (link === this.$route.name) { return true }
+      if (link === '/message' && this.$route.name === 'chatbot') { return true }
+      if (link === '/dashboard' && (this.$route.name === 'candidates' || this.$route.name === 'candidate' || this.$route.name === 'search')) { return true }
       return ('/' + this.$route.name) === link
     },
     tooltipAttached () {

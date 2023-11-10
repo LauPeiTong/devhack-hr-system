@@ -2,8 +2,8 @@
 sidebar-menu-akahon(
   :menuItems="menus"
   :isUsedVueRouter="true"
-  :menuTitle="'HR App'"
-  :menuLogo="require(`../../assets/seedify.png`)"
+  :menuTitle="'Recruiter.AI'"
+  :menuLogo="require(`../../assets/img/logo.png`)"
   :bgColor="'white'"
   :secondaryColor="$vuetify.theme.themes.light.primary"
   :logoTitleColor="$vuetify.theme.themes.light.primary"
@@ -30,13 +30,7 @@ export default {
           icon: 'bx-grid-alt'
         },
         {
-          link: '/candidates',
-          name: 'Candidates',
-          tooltip: 'Candidates',
-          icon: 'bx-bar-chart-square'
-        },
-        {
-          link: '/chatbot',
+          link: '/message',
           name: 'Chatbot',
           tooltip: 'Chatbot',
           icon: 'bx-message'

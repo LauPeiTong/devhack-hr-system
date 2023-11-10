@@ -42,8 +42,7 @@ v-card.rounded-lg
             )
               v-img(:src="require(`../../assets/employee/1.png`)")
           v-row.pl-10
-            //- <v-btn class="ma-1" color="primary">Send Offer</v-btn>
-            candidateButton
+            v-btn.ma-1.primary Send Offer
 
     v-card.px-4.py-2.mb-2(outlined)
       .d-flex.flex-no-wrap.justify-space-between

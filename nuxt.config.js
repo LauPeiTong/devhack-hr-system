@@ -54,8 +54,14 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/'
+    // Set your API key here
+    baseURL: '/',
+    headers: {
+      common: {
+        'Content-Type': 'application/json',
+        Authorization: ''
+      }
+    }
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -67,5 +73,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extend (config) {
+      config.module.rules.push({
+        test: /\.(pdf|docx|pptx)$/, // match the file extensions you want to load
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]' // specify the output filename and path
+        }
+      })
+    }
   }
 }

@@ -3,12 +3,13 @@
   upper-title.ma-0(:title="'Dashboard'" :titleClass="'dark-background'" :icon="'bell'" :rightIconColor="$vuetify.theme.themes.light.tertiary")
   v-row.ma-0.pt-8.fill-width
     v-col(cols="12")
+      recruitment-step.pt-12.align-center.px-4
     v-col(cols="12")
-      startup-table-vue.pb-8.align-center.px-7
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
+import RecruitmentStep from '~/components/dashboard/RecruitmentStep.vue'
 import StartupTableVue from '~/components/dashboard/startupTable.vue'
 import TrendListVue from '~/components/dashboard/trendList.vue'
 import UpperTitleVue from '~/components/UpperTitle.vue'
@@ -18,7 +19,8 @@ export default {
   components: {
     UpperTitleVue,
     TrendListVue,
-    StartupTableVue
+    StartupTableVue,
+    RecruitmentStep
   },
   layout: 'default',
   data () {
