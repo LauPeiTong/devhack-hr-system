@@ -1,4 +1,4 @@
-# venture-capital
+# Recruiter.AI
 
 ## Build Setup
 
@@ -18,6 +18,22 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+
+## ChatGPT API
+To use RBot, please add your ChatGPT API Key in nuxt.config.js as following:
+
+```
+axios: {
+    // Set your API key here
+    baseURL: '/',
+    headers: {
+      common: {
+        'Content-Type': 'application/json',
+        Authorization: 'your ChatGPT API Key'
+      }
+    }
+  }
+```
 
 ## Special Directories
 
