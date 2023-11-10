@@ -1,5 +1,8 @@
 # Recruiter.AI
 
+## Recruiter.AI website
+You can access the system through this lnik: https://recruiter-ai.netlify.app/candidate
+
 ## Build Setup
 
 ```bash
