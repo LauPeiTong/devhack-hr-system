@@ -22,7 +22,7 @@ $ yarn generate
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-## ChatGPT API
+## RBot - ChatGPT API
 To use RBot, please add your ChatGPT API Key in nuxt.config.js as following:
 
 ```
@@ -37,6 +37,9 @@ axios: {
     }
   }
 ```
+
+## Candidate Comparison
+To use the candidate comparison feature, run the main.py in /pythonFile
 
 ## Special Directories
 
