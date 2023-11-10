@@ -59,7 +59,7 @@ export default {
     headers: {
       common: {
         'Content-Type': 'application/json',
-        Authorization: ''
+        Authorization: 'Bearer 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'
       }
     }
   },
