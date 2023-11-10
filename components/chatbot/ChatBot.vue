@@ -27,7 +27,7 @@ v-card.chatbot.rounded-lg(flat height="640" )
 										v-icon.lightBlue2--text.me-2(small @click="") mdi-thumb-up-outline
 										v-icon.lightBlue2--text(small @click="") mdi-thumb-down-outline
 									pre.body-2.wrapped-text {{ c.text }}
-							v-col(cols="10" v-if="c.isDefault && c.defaultId == 1 && c.text !== 'An error occurred.'")
+							v-col(cols="10" v-if="c.isDefault && c.defaultId == 1 && c.text !== 'Here is my suggestion:\nAn error occurred.'")
 								v-row
 									v-col.pt-0(cols="10")
 										v-card.pa-2.rounded-lg.rounded-tl-0(outlined)
